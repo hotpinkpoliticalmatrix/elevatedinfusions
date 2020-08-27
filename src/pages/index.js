@@ -29,8 +29,51 @@ export const pageQuery = graphql`
     products: allMdx(filter: { fileAbsolutePath: { regex: "/products/" } }) {
       edges {
         node {
+          exports {
+            products {
+              img {
+                childImageSharp {
+                  fluid(maxHeight: 600) {
+                    base64
+                    aspectRatio
+                    src
+                    srcSet
+                    sizes
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    hero: allMdx(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
+      edges {
+        node {
+          frontmatter {
+            subtitle
+            subtitlePrefix
+            title
+          }
+        }
+      }
+    }
+    reviews: allMdx(filter: { fileAbsolutePath: { regex: "/reviews/" } }) {
+      edges {
+        node {
+          exports {
+            reviews {
+              author
+              date
+              path
+              title
+              videoSourceURL
+              videoTitle
+            }
+          }
           frontmatter {
             title
+            subtitle
           }
         }
       }
