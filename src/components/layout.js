@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import HeaderLinks from "./headerLinks.jsx"
 
 import Header from "./header"
 import "./layout.css"
@@ -25,7 +26,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        brand="Elevated Infusions"
+        rightLinks={<HeaderLinks />}
+        fixed
+        color="primary"
+        changeColorOnScroll={{
+          height: 400,
+          color: "white",
+        }}
+        siteTitle={data.site.siteMetadata.title}
+      />
       <div
         style={{
           margin: `0 auto`,
