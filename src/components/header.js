@@ -77,7 +77,7 @@ class Header extends React.Component {
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? (
-            <img alt="logo" maxHeight="80" src={logo} />
+            <img alt="logo" maxheight="80" src={logo} />
           ) : null}
           <div className={classes.flex}>
             {leftLinks !== undefined ? (
@@ -85,7 +85,7 @@ class Header extends React.Component {
                 {leftLinks}
               </Hidden>
             ) : (
-              <img alt="logo" maxHeight="80" src={logo} />
+              <img alt="logo" maxheight="80" src={logo} />
             )}
           </div>
           <Hidden smDown implementation="css">
