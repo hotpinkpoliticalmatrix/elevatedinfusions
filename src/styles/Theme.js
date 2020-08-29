@@ -1,9 +1,9 @@
 module.exports = {
   colors: {
-    primary: "#48233C", //dark purple
-    secondary: "#40376e", //dark slate blue
-    tertiary: "96ACB7", //pewter blue
-    text: "#36558F", //Y in Mn Blue
+    primary: "#303F75", //dark blue
+    secondary: "#EFA560", //tan
+    tertiary: "518F44", //green
+    text: "#1B6255", //dark green
     background: "#ffffff", //white
     backgroundSecondary: "D4E4BC", //tea green
   },

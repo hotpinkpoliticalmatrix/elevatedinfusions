@@ -8,13 +8,13 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import IconButton from "@material-ui/core/IconButton"
-import Button from "@material-ui/core/Button"
 import Hidden from "@material-ui/core/Hidden"
 import Drawer from "@material-ui/core/Drawer"
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu"
 // core components
 import headerStyle from "../styles/headerStyle"
+import logo from "../images/branding/longlogo.png"
 
 class Header extends React.Component {
   constructor(props) {
@@ -64,7 +64,6 @@ class Header extends React.Component {
       color,
       rightLinks,
       leftLinks,
-      brand,
       fixed,
       absolute,
     } = this.props
@@ -74,18 +73,19 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed,
     })
-    const brandComponent = <Button className={classes.title}>{brand}</Button>
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
-          {leftLinks !== undefined ? brandComponent : null}
+          {leftLinks !== undefined ? (
+            <img alt="logo" maxHeight="80" src={logo} />
+          ) : null}
           <div className={classes.flex}>
             {leftLinks !== undefined ? (
               <Hidden smDown implementation="css">
                 {leftLinks}
               </Hidden>
             ) : (
-              brandComponent
+              <img alt="logo" maxHeight="80" src={logo} />
             )}
           </div>
           <Hidden smDown implementation="css">
@@ -141,7 +141,6 @@ Header.propTypes = {
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
-  brand: PropTypes.string,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from
