@@ -4,12 +4,15 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import { splashScreen } from "../config"
+import Grid from "../components/imgGrid"
 
 const IndexPage = ({ data }) => {
   console.log(data)
+  const products = data.products.edges[0].node.exports.products
   return (
     <Layout splashScreen={splashScreen}>
       <SEO title="Elevated Infusions Bakery" />
+      <Grid products={products}></Grid>
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
@@ -42,6 +45,7 @@ export const pageQuery = graphql`
                   }
                 }
               }
+              cols
             }
           }
         }
