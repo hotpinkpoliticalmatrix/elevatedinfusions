@@ -2,8 +2,9 @@ import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
-// import tileData from "./tileData"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
+// const theme = require("../styles/Theme")
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -11,42 +12,80 @@ const useStyles = makeStyles(theme => ({
     flexWrap: "wrap",
     justifyContent: "space-around",
     overflow: "hidden",
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.main,
   },
   gridList: {
     width: 500,
-    height: 450,
+
+    [theme.breakpoints.up("sm")]: {
+      width: 800,
+    },
+  },
+  gridItem: {
+    [theme.breakpoints.up("sm")]: {
+      marginTop: -8,
+      justifyContent: "center",
+      height: 72,
+      borderRadius: 3,
+      border: 0,
+      color: "white",
+    },
+  },
+  imgs: {
+    [theme.breakpoints.up("sm")]: {
+      height: 72,
+    },
+    borderRadius: 3,
+    border: 0,
+    color: "white",
   },
 }))
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *     cols: 2,
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 export default function ImageGridList({ products }) {
   const classes = useStyles()
-  console.log(products)
-  return (
+  const medium = useMediaQuery("(min-width:700px)")
+  return medium ? (
     <div className={classes.root}>
-      <GridList cellHeight={160} className={classes.gridList} cols={3}>
+      <GridList
+        id="products"
+        cols={3}
+        cellHeight={200}
+        className={classes.gridList}
+        spacing={20}
+        padding={0}
+      >
         {products.map(product => {
           const img = product.img.childImageSharp.fluid
           return (
-            <GridListTile key={img.src} cols={product.cols || 1}>
+            <GridListTile
+              className={classes.gridItem}
+              key={img.src}
+              cols={product.cols || 1}
+              borderradius="50px"
+            >
+              <Img
+                fluid={img}
+                className="imgs"
+                objectFit="cover"
+                objectPosition="50% 50%"
+              />
+            </GridListTile>
+          )
+        })}
+      </GridList>
+    </div>
+  ) : (
+    <div id="products" className={classes.root}>
+      <GridList
+        cols={1}
+        cellHeight={200}
+        className={classes.gridList}
+        spacing={1}
+      >
+        {products.map(product => {
+          const img = product.img.childImageSharp.fluid
+          return (
+            <GridListTile className={classes.gridItem} key={img.src} cols={1}>
               <Img fluid={img} />
             </GridListTile>
           )
@@ -55,55 +94,3 @@ export default function ImageGridList({ products }) {
     </div>
   )
 }
-
-// import React from "react"
-// import { makeStyles } from "@material-ui/core/styles"
-// import Paper from "@material-ui/core/Paper"
-// import Grid from "@material-ui/core/Grid"
-// import Img from "gatsby-image"
-
-// const useStyles = makeStyles(theme => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-//   paper: {
-//     padding: theme.spacing(2),
-//     textAlign: "center",
-//     color: theme.palette.text.secondary,
-//   },
-// }))
-
-// export default function AutoGrid({ products }) {
-//   const classes = useStyles()
-
-//   console.log(products)
-//   // const products = props.products
-//   return (
-//     <div className={classes.root}>
-//       <Grid container spacing={3}>
-//         <Grid item xs>
-//           <Paper className={classes.paper}>
-//             <Img fixed={products[0].img.childImageSharp.fluid} />
-//           </Paper>
-//         </Grid>
-//         <Grid item xs>
-//           <Paper className={classes.paper}>xs</Paper>
-//         </Grid>
-//         <Grid item xs>
-//           <Paper className={classes.paper}>xs</Paper>
-//         </Grid>
-//       </Grid>
-//       <Grid container spacing={3}>
-//         <Grid item xs>
-//           <Paper className={classes.paper}>xs</Paper>
-//         </Grid>
-//         <Grid item xs={6}>
-//           <Paper className={classes.paper}>xs=6</Paper>
-//         </Grid>
-//         <Grid item xs>
-//           <Paper className={classes.paper}>xs</Paper>
-//         </Grid>
-//       </Grid>
-//     </div>
-//   )
-// }

@@ -40,8 +40,8 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteShortTitle,
         start_url: `/`,
-        background_color: theme.colors.background,
-        theme_color: theme.colors.primary,
+        background_color: theme.palette.background.main,
+        theme_color: theme.palette.primary.main,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

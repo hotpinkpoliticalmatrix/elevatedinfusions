@@ -1,18 +1,50 @@
-module.exports = {
-  colors: {
-    primary: "#303F75", //dark blue
-    secondary: "#EFA560", //tan
-    tertiary: "518F44", //green
-    text: "#1B6255", //dark green
-    background: "#ffffff", //white
-    backgroundSecondary: "D4E4BC", //tea green
+// require = require("esm")(module)
+// import { createMuiTheme } from "@material-ui/core/styles"
+const { createMuiTheme } = require("@material-ui/core/styles")
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      // light: will be calculated from palette.primary.main,
+      main: "#303F75",
+      // dark: will be calculated from palette.primary.main,
+      // contrastText: will be calculated to contrast with palette.primary.main
+    },
+    secondary: {
+      light: "#81c071",
+      main: "#518F44",
+      // dark: will be calculated from palette.secondary.main,
+      contrastText: "#ffcc00",
+    },
+    tertiary: {
+      main: "#EFA560", //tan
+    },
+    warning: {
+      main: "#1B6255", //dark green
+    },
+    background: {
+      main: "#ffffff",
+    }, //white
+    backgroundSecondary: {
+      main: "D4E4BC", //tea green
+    },
+
+    // Used by `getContrastText()` to maximize the contrast between
+    // the background and the text.
+    contrastThreshold: 3,
+    // Used by the functions below to shift a color's luminance by approximately
+    // two indexes within its tonal palette.
+    // E.g., shift from Red 500 to Red 300 or Red 700.
+    tonalOffset: 0.2,
   },
   breakpoints: {
-    xxs: "480px",
-    xs: "600px",
-    sm: "768px",
-    md: "1061px",
-    lg: "1200px",
+    // values: {
+    xs: 0,
+    sm: 700,
+    md: 960,
+    lg: 1280,
+    xl: 1920,
+    // },
   },
   fonts: {
     primary: "Roboto, Arial, sans-serif",
@@ -21,4 +53,6 @@ module.exports = {
   pageWidth: "100rem",
   headerHeight: "6.25rem",
   footerHeight: "7.5rem",
-}
+})
+
+module.exports = theme
