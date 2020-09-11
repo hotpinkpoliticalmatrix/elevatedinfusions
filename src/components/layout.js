@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         fixed
         color="primary"
         changeColorOnScroll={{
-          height: 400,
+          height: 300,
           color: "white",
         }}
         siteTitle={data.site.siteMetadata.title}
