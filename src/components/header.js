@@ -14,7 +14,6 @@ import Drawer from "@material-ui/core/Drawer"
 import Menu from "@material-ui/icons/Menu"
 // core components
 import headerStyle from "../styles/material-kit-react/components/headerStyle"
-import logo from "../images/branding/longlogo.png"
 import Button from "@material-ui/core/Button"
 
 class Header extends React.Component {

@@ -1,8 +1,9 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
 import classNames from "classnames"
+import "typeface-roboto"
 
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Grid from "../components/imgGrid"
@@ -12,15 +13,14 @@ import landingPageStyle from "../styles/material-kit-react/views/landingPage"
 import Hero from "../components/Hero"
 
 const IndexPage = props => {
-  const { data, classes, ...rest } = props
-  console.log(props)
+  const { data, classes } = props
 
   const products = data.products.edges[0].node.exports.products
   const hero = data.hero.edges[0].node
   return (
     <Layout>
       <SEO title="Elevated Infusions Bakery" />
-      <ThemeProvider theme={theme} classes={classes}>
+      <ThemeProvider theme={theme}>
         <Hero hero={hero} classes={classes} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
@@ -64,17 +64,23 @@ export const pageQuery = graphql`
           frontmatter {
             image {
               childImageSharp {
-                fluid {
+                fluid(maxHeight: 300) {
                   base64
+                  aspectRatio
                   src
+                  srcSet
+                  sizes
                 }
               }
             }
             logo {
               childImageSharp {
-                fluid(quality: 100, maxHeight: 100) {
+                fixed(height: 140, quality: 100) {
+                  aspectRatio
                   base64
+                  height
                   src
+                  width
                 }
               }
             }

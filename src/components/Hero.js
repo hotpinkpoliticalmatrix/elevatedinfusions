@@ -1,27 +1,33 @@
 import React from "react"
-import classNames from "classnames"
-// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
-
 import Parallax from "./parallax"
 import GridContainer from "./GridContainer"
 import GridItem from "./GridItem"
 import Button from "./button"
 import { FaPlay } from "react-icons/fa"
+import Img from "gatsby-image"
 import landingPageStyle from "../styles/material-kit-react/views/landingPage"
+import Typography from "@material-ui/core/Typography"
 
 const Hero = ({ classes, hero }) => {
-  console.log(hero, classes)
+  console.log(hero)
   return (
     <Parallax filter image={require("../images/mainProducts/assortment.png")}>
       <div className={classes.container}>
+        <Img
+          className={classes.img}
+          fixed={hero.frontmatter.logo.childImageSharp.fixed}
+        />
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
-            <h1 className={classes.title}>{hero.frontmatter.title}</h1>
-            <h4>
+            <Typography
+              className={classes.subtitle}
+              display="block"
+              gutterBottom
+            >
               {hero.frontmatter.subtitlePrefix}{" "}
               <span>{hero.frontmatter.subtitle}</span>
-            </h4>
+            </Typography>
             <br />
             <Button
               color="danger"
@@ -31,7 +37,7 @@ const Hero = ({ classes, hero }) => {
               rel="noopener noreferrer"
             >
               <FaPlay />
-              Watch video
+              See our reviews
             </Button>
           </GridItem>
         </GridContainer>
