@@ -30,28 +30,20 @@ const Layout = ({ children }) => {
         brand="Elevated Infusions"
         rightLinks={<HeaderLinks />}
         fixed
-        color="primary"
+        color="transparent"
         changeColorOnScroll={{
           height: 300,
-          color: "white",
+          color: "primary",
         }}
         siteTitle={data.site.siteMetadata.title}
       />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-          marginTop: 200,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <main>{children}</main>
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </footer>
+      {/* </div> */}
     </>
   )
 }

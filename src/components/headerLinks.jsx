@@ -19,7 +19,7 @@ import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"
 // import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
 import Button from "./button.jsx"
 
-import headerLinksStyle from "../styles/headerLinksStyles.jsx"
+import headerLinksStyle from "../styles/material-kit-react/components/headerLinksStyle"
 
 function HeaderLinks({ ...props }) {
   const { classes } = props

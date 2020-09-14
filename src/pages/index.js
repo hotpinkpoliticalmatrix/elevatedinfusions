@@ -8,26 +8,31 @@ import SEO from "../components/seo"
 import Grid from "../components/imgGrid"
 import { theme } from "../styles/Theme"
 import { ThemeProvider } from "@material-ui/core/styles"
-import componentsStyle from "../styles/componentsStyle"
+import landingPageStyle from "../styles/material-kit-react/views/landingPage"
+import Hero from "../components/Hero"
 
-const IndexPage = ({ data }) => {
-  console.log(data)
-  const { classes, ...rest } = this.props
+const IndexPage = props => {
+  const { data, classes, ...rest } = props
+  console.log(props)
 
   const products = data.products.edges[0].node.exports.products
+  const hero = data.hero.edges[0].node
   return (
     <Layout>
       <SEO title="Elevated Infusions Bakery" />
-      <ThemeProvider theme={theme}>
-        <Grid products={products}></Grid>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      <ThemeProvider theme={theme} classes={classes}>
+        <Hero hero={hero} classes={classes} />
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div className={classes.container}>
+            <Grid products={products} />
+          </div>
+        </div>
       </ThemeProvider>
     </Layout>
   )
 }
 
-export default withStyles(componentsStyle)(IndexPage)
+export default withStyles(landingPageStyle)(IndexPage)
 
 export const pageQuery = graphql`
   {
@@ -57,9 +62,25 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            subtitle
-            subtitlePrefix
+            image {
+              childImageSharp {
+                fluid {
+                  base64
+                  src
+                }
+              }
+            }
+            logo {
+              childImageSharp {
+                fluid(quality: 100, maxHeight: 100) {
+                  base64
+                  src
+                }
+              }
+            }
             title
+            subtitlePrefix
+            subtitle
           }
         }
       }
