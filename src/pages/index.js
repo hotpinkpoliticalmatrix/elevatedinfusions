@@ -1,35 +1,38 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import withStyles from "@material-ui/core/styles/withStyles"
+import classNames from "classnames"
+import "typeface-roboto"
+
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import { splashScreen } from "../config"
 import Grid from "../components/imgGrid"
 import { theme } from "../styles/Theme"
 import { ThemeProvider } from "@material-ui/core/styles"
+import landingPageStyle from "../styles/material-kit-react/views/landingPage"
+import Hero from "../components/Hero"
 
-const IndexPage = ({ data }) => {
-  console.log(data)
+const IndexPage = props => {
+  const { data, classes } = props
+
   const products = data.products.edges[0].node.exports.products
+  const hero = data.hero.edges[0].node
   return (
-    <Layout splashScreen={splashScreen}>
+    <Layout>
       <SEO title="Elevated Infusions Bakery" />
       <ThemeProvider theme={theme}>
-        <Grid products={products}></Grid>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-          <Image />
+        <Hero hero={hero} classes={classes} />
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div className={classes.container}>
+            <Grid products={products} />
+          </div>
         </div>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </ThemeProvider>
     </Layout>
   )
 }
 
-export default IndexPage
+export default withStyles(landingPageStyle)(IndexPage)
 
 export const pageQuery = graphql`
   {
@@ -59,9 +62,31 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            subtitle
-            subtitlePrefix
+            image {
+              childImageSharp {
+                fluid(maxHeight: 300) {
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
+                }
+              }
+            }
+            logo {
+              childImageSharp {
+                fixed(height: 140, quality: 100) {
+                  aspectRatio
+                  base64
+                  height
+                  src
+                  width
+                }
+              }
+            }
             title
+            subtitlePrefix
+            subtitle
           }
         }
       }

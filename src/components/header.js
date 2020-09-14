@@ -13,8 +13,8 @@ import Drawer from "@material-ui/core/Drawer"
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu"
 // core components
-import headerStyle from "../styles/headerStyle"
-import logo from "../images/branding/longlogo.png"
+import headerStyle from "../styles/material-kit-react/components/headerStyle"
+import Button from "@material-ui/core/Button"
 
 class Header extends React.Component {
   constructor(props) {
@@ -63,6 +63,7 @@ class Header extends React.Component {
       classes,
       color,
       rightLinks,
+      brand,
       leftLinks,
       fixed,
       absolute,
@@ -73,19 +74,18 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed,
     })
+    const brandComponent = <Button className={classes.title}>{brand}</Button>
+
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
-          {leftLinks !== undefined ? (
-            <img alt="logo" maxheight="80" src={logo} />
-          ) : null}
           <div className={classes.flex}>
             {leftLinks !== undefined ? (
               <Hidden smDown implementation="css">
                 {leftLinks}
               </Hidden>
             ) : (
-              <img alt="logo" maxheight="80" src={logo} />
+              brandComponent
             )}
           </div>
           <Hidden smDown implementation="css">
