@@ -6,15 +6,16 @@ import "typeface-roboto"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Grid from "../components/imgGrid"
 import { theme } from "../styles/Theme"
 import { ThemeProvider } from "@material-ui/core/styles"
 import landingPageStyle from "../styles/material-kit-react/views/landingPage"
 import Hero from "../components/Hero"
+import ImgGallery from "../components/ImgGallery"
+import ProdIntro from "../components/prodIntro"
 
 const IndexPage = props => {
   const { data, classes } = props
-
+  console.log(data)
   const products = data.products.edges[0].node.exports.products
   const hero = data.hero.edges[0].node
   return (
@@ -24,7 +25,7 @@ const IndexPage = props => {
         <Hero hero={hero} classes={classes} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <Grid products={products} />
+            <ImgGallery products={products} />
           </div>
         </div>
       </ThemeProvider>
@@ -52,7 +53,7 @@ export const pageQuery = graphql`
                   }
                 }
               }
-              cols
+              name
             }
           }
         }
