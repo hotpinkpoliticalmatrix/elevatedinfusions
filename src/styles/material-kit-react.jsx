@@ -40,7 +40,7 @@ const container = {
     maxWidth: "720px",
   },
   "@media (min-width: 992px)": {
-    maxWidth: "960px",
+    maxWidth: "900px",
   },
   "@media (min-width: 1200px)": {
     maxWidth: "1140px",
@@ -69,12 +69,12 @@ const defaultFont = {
   lineHeight: "1.5em",
 }
 
-const primaryColor = "#055365" //dark blue
-const warningColor = "#1B6255" //dark green
-const dangerColor = "#f44336"
-const successColor = "#518F44"
-const infoColor = "#D4E4BC"
-const roseColor = "#EFA560"
+const primaryColor = "#055365" //dark teal
+const warningColor = "#303E74" //dark blue
+const dangerColor = "#863AA6" //raw umber
+const successColor = "#C4832F" //bronze
+const infoColor = "#746044" //raw umber
+const roseColor = "#EDE7B1" //medium champagne
 const grayColor = "#999999"
 
 const primaryBoxShadow = {

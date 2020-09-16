@@ -38,15 +38,7 @@ function Footer({ ...props }) {
                 <FaInstagram />
               </a>
             </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              {/* <a
-                href="https://www.instagram.com/elevateyourinfusions/"
-                className={classes.block}
-                target="_blank"
-              >
-                <HiOutlineMail />
-              </a> */}
-            </ListItem>
+            <ListItem className={classes.inlineBlock}></ListItem>
           </List>
         </div>
         <div className={classes.right}>

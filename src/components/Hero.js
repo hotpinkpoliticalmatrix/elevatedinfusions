@@ -10,7 +10,6 @@ import landingPageStyle from "../styles/material-kit-react/views/landingPage"
 import Typography from "@material-ui/core/Typography"
 
 const Hero = ({ classes, hero }) => {
-  console.log(hero)
   return (
     <Parallax filter image={require("../images/mainProducts/assortment.png")}>
       <div className={classes.container}>

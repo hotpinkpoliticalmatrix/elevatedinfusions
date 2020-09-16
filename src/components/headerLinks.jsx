@@ -40,6 +40,11 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Button color="transparent" href="/#menu" className={classes.navLink}>
+          Menu
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Button
           color="transparent"
           href="/#reviews"
