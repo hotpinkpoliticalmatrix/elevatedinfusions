@@ -12,7 +12,8 @@ import GridItem from "./GridItem.jsx"
 import Button from "./button"
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"
 import Img from "gatsby-image"
-import logo from "../images/branding/circularLogo.png"
+import logo from "../images/branding/logoBlue.png"
+import menu from "../images/mainProducts/menu.jpg"
 
 class IntroContainer extends React.Component {
   render() {
@@ -32,16 +33,10 @@ class IntroContainer extends React.Component {
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
-                    <img
-                      src={logo}
-                      alt="logo"
-                      // fluid={intro.frontmatter.logo.childImageSharp.fluid}
-                      className={imageClasses}
-                    />
+                    <img src={logo} alt="logo" className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h1>{intro.frontmatter.title}</h1>
                     <Button justIcon link className={classes.margin5}>
                       <FaTwitter />
                     </Button>
@@ -66,6 +61,8 @@ class IntroContainer extends React.Component {
             <ImgGallery products={products} classes={classes} />
           </div>
         </div>
+        <img src={menu} alt="menu" />
+        {/* <Img fluid={intro.frontmatter.image.childImageSharp.fluid} /> */}
       </div>
     )
   }
