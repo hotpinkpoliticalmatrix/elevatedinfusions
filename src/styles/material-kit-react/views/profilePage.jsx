@@ -66,23 +66,54 @@ const profilePageStyle = {
       transform: "translate3d(0, -50%, 0)",
     },
   },
-  menuTitle: {
-    "@media (min-width: 960px)": {
-      paddingTop: "250px",
-      margin: "0px 0px 0px 20px",
+  menuContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    textAlign: "center",
+    backgroundColor: warningColor,
+    "@media (min-width: 767px)": {
+      margin: "0px",
+      display: "flex",
+      justifyContent: "center",
+      alignContent: "center",
+      flexDirection: "row",
+    },
+  },
+  menuHead: {
+    maxWidth: "200px",
+    zIndex: "3",
+    "@media (min-width: 400px)": {
+      maxWidth: "400px",
       width: "105%",
       height: "auto",
     },
-  },
-  menuContainer: {
-    backgroundColor: warningColor,
-    margin: "0px",
-  },
-  menuDiv: {
-    margin: "100px 40px",
+    "@media (min-width: 767px)": {
+      // margin: "200px 40px",
+      maxWidth: "600px",
+      width: "105%",
+      height: "auto",
+    },
+    "@media (min-width: 960px)": {
+      margin: "150px 40px",
+      width: "100%",
+      height: "auto",
+    },
+    "@media (min-width: 960px)": {
+      margin: "200px 60px",
+    },
   },
   menu: {
-    borderRadius: "10%",
+    borderRadius: "50%",
+    zIndex: "1",
+    padding: "40px",
+    marginTop: "-60px",
+    "@media (min-width: 767px)": {
+      padding: "20px",
+    },
+    "@media (min-width: 960px)": {
+      padding: "100px",
+    },
   },
 }
 
