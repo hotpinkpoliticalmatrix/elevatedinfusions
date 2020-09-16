@@ -1,6 +1,5 @@
 const config = require("./src/config")
 const theme = require("./src/styles/Theme")
-const emoji = require(`remark-emoji`)
 
 module.exports = {
   siteMetadata: {
@@ -52,7 +51,6 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         gatsbyRemarkPlugins: [
-          emoji,
           {
             resolve: `gatsby-remark-images`,
             options: {

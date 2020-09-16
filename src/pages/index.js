@@ -5,8 +5,6 @@ import "typeface-roboto"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { theme } from "../styles/Theme"
-import { ThemeProvider } from "@material-ui/core/styles"
 import Hero from "../components/Hero"
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
 import IntroContainer from "../components/introContainer"
@@ -20,11 +18,9 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title="Elevated Infusions Bakery" />
-      <ThemeProvider theme={theme}>
-        <Hero hero={hero} classes={classes} />
-        <IntroContainer intro={intro} products={products} />
-        <Menu />
-      </ThemeProvider>
+      <Hero hero={hero} classes={classes} />
+      <IntroContainer intro={intro} products={products} />
+      <Menu />
     </Layout>
   )
 }
