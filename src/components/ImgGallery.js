@@ -19,12 +19,7 @@ import profilePageStyle from "../styles/material-kit-react/views/profilePage"
 
 class ImgGallery extends React.Component {
   render() {
-    const { icons, products, classes, ...rest } = this.props
-    const imageClasses = classNames(
-      classes.imgRaised,
-      classes.imgRoundedCircle,
-      classes.imgFluid
-    )
+    const { products, classes } = this.props
     const cupcakes = products.filter(product => product.name === "Cupcakes")
     const brownies = products.filter(product => product.name === "Brownies")
     const cerealSeries = products.filter(
@@ -36,7 +31,7 @@ class ImgGallery extends React.Component {
     const krispies = products.filter(product => product.name === "Krispies")
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
     return (
-      <GridContainer justify="center">
+      <GridContainer id="products" justify="center">
         <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
           <NavPills
             alignCenter

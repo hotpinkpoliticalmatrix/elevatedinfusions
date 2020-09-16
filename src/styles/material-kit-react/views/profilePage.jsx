@@ -1,4 +1,9 @@
-import { container, title } from "../../material-kit-react"
+import {
+  container,
+  title,
+  warningColor,
+  primaryColor,
+} from "../../material-kit-react"
 
 import imagesStyle from "../imagesStyles"
 
@@ -9,18 +14,19 @@ const profilePageStyle = {
     "& img": {
       maxWidth: "160px",
       width: "100%",
-      margin: "0 auto",
+      marginBottom: "-50px",
       transform: "translate3d(0, -50%, 0)",
     },
   },
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
-    color: "#999",
+    color: warningColor,
     textAlign: "center !important",
   },
   name: {
-    marginTop: "-80px",
+    marginTop: "-10px",
+    color: warningColor,
   },
   ...imagesStyle,
   main: {
@@ -29,7 +35,7 @@ const profilePageStyle = {
     zIndex: "3",
   },
   mainRaised: {
-    margin: "-60px 30px 0px",
+    margin: "-5px 30px 0px",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
@@ -51,11 +57,37 @@ const profilePageStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999",
+    color: warningColor,
   },
   navWrapper: {
     margin: "20px 0px 20px 0px",
     textAlign: "center",
+  },
+  treet: {
+    textAlign: "center",
+    "& img": {
+      width: "100%",
+      margin: "0 auto",
+      transform: "translate3d(0, -50%, 0)",
+    },
+  },
+  menuTitle: {
+    textAlign: "center",
+    "& img": {
+      maxWidth: "200px",
+      // width: "100%",
+      height: "auto",
+      marginBottom: "-50px",
+      transform: "translate3d(0, -50%, 0)",
+    },
+  },
+  menuContainer: {
+    backgroundColor: warningColor,
+    margin: "0px",
+  },
+  menu: {
+    marginBottom: "10px",
+    borderRadius: "10%",
   },
 }
 

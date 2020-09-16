@@ -35,6 +35,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
     "react-swipeable-views": "^0.13.9",
+    "remark-emoji": "^2.1.0",
     "styled-components": "^5.1.1",
     "typeface-roboto": "0.0.75"
   },

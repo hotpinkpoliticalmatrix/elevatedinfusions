@@ -1,6 +1,5 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
-import classNames from "classnames"
 import "typeface-roboto"
 
 import { graphql } from "gatsby"
@@ -8,14 +7,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { theme } from "../styles/Theme"
 import { ThemeProvider } from "@material-ui/core/styles"
-// import landingPageStyle from "../styles/material-kit-react/views/landingPage"
 import Hero from "../components/Hero"
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
 import IntroContainer from "../components/introContainer"
+import Menu from "../components/Menu"
 
 const IndexPage = props => {
   const { data, classes } = props
-  console.log(data)
   const products = data.products.edges[0].node.exports.products
   const intro = data.intro.edges[0].node
   const hero = data.hero.edges[0].node
@@ -25,6 +23,7 @@ const IndexPage = props => {
       <ThemeProvider theme={theme}>
         <Hero hero={hero} classes={classes} />
         <IntroContainer intro={intro} products={products} />
+        <Menu />
       </ThemeProvider>
     </Layout>
   )
@@ -115,10 +114,21 @@ export const pageQuery = graphql`
                 }
               }
             }
-            body
+            intro
+            main
             contactIntro
             contact
-            title
+            titleImg {
+              childImageSharp {
+                fluid(maxHeight: 200, quality: 100) {
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
+                }
+              }
+            }
           }
         }
       }
