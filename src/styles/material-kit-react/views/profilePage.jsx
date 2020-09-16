@@ -1,9 +1,4 @@
-import {
-  container,
-  title,
-  warningColor,
-  primaryColor,
-} from "../../material-kit-react"
+import { container, title, warningColor } from "../../material-kit-react"
 
 import imagesStyle from "../imagesStyles"
 
