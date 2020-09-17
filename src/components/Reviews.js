@@ -6,7 +6,6 @@ import withStyles from "@material-ui/core/styles/withStyles"
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard"
 import Schedule from "@material-ui/icons/Schedule"
-import List from "@material-ui/icons/List"
 
 // core components
 import GridContainer from "./GridContainer.jsx"
@@ -17,14 +16,19 @@ import reviewsTitleImg from "../images/branding/reviewsTitle.png"
 
 class SectionPills extends React.Component {
   render() {
-    const { classes } = this.props
+    const { classes, reviews } = this.props
+    console.log(this.props)
     return (
       <div className={classes.section}>
         <div className={classes.container}>
           <div id="navigation-pills">
             <GridContainer className={classes.menuContainer}>
               <GridItem xs={10} xm={10} md={6}>
-                <img src={reviewsTitleImg} className={classes.menuHead} />
+                <img
+                  alt="reviews"
+                  src={reviewsTitleImg}
+                  className={classes.menuHead}
+                />
               </GridItem>
               <GridItem xs={12} sm={12} md={12} lg={6}>
                 <NavPills

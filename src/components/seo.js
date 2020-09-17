@@ -49,22 +49,22 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `http://elevatedinfusions.com`,
         },
         {
-          name: `twitter:card`,
+          name: `instagram:card`,
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
+          name: `instagram:creator`,
           content: site.siteMetadata.author,
         },
         {
-          name: `twitter:title`,
+          name: `instagram:title`,
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: `instagram:description`,
           content: metaDescription,
         },
       ].concat(meta)}

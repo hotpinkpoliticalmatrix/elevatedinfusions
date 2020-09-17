@@ -11,8 +11,6 @@ import CakeIcon from "@material-ui/icons/Cake"
 import FlashOnIcon from "@material-ui/icons/FlashOn"
 import GradeIcon from "@material-ui/icons/Grade"
 import MoodIcon from "@material-ui/icons/Mood"
-import ThumbUpIcon from "@material-ui/icons/ThumbUp"
-
 import Img from "gatsby-image"
 
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
@@ -25,9 +23,7 @@ class ImgGallery extends React.Component {
     const cerealSeries = products.filter(
       product => product.name === "CerealSeries"
     )
-    const cinnaBuns = products.filter(
-      product => product.name === "Cinnamon Buns"
-    )
+    const specials = products.filter(product => product.name === "Specials")
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
     return (
       <GridContainer id="products" justify="center">
@@ -98,7 +94,7 @@ class ImgGallery extends React.Component {
               },
               {
                 tabButton: "Brownies",
-                tabIcon: GradeIcon,
+                tabIcon: MoodIcon,
                 tabContent: (
                   <GridContainer justify="center">
                     <GridItem xs={12} sm={12} md={4} lg={4}>
@@ -215,31 +211,58 @@ class ImgGallery extends React.Component {
                 ),
               },
               {
-                tabButton: "Buns",
-                tabIcon: MoodIcon,
+                tabButton: "Specials",
+                tabIcon: GradeIcon,
                 tabContent: (
                   <GridContainer justify="center">
                     <GridItem xs={12} sm={12} md={4} lg={4}>
                       <Img
                         alt="..."
-                        fluid={cinnaBuns[0].img.childImageSharp.fluid}
+                        fluid={specials[0].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />{" "}
                       <Img
                         alt="..."
-                        fluid={cinnaBuns[1].img.childImageSharp.fluid}
+                        fluid={specials[1].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
+                      <Img
+                        alt="..."
+                        fluid={specials[4].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4} lg={4}>
                       <Img
                         alt="..."
-                        fluid={cinnaBuns[2].img.childImageSharp.fluid}
+                        fluid={specials[2].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
                       <Img
                         alt="..."
-                        fluid={cinnaBuns[3].img.childImageSharp.fluid}
+                        fluid={specials[3].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
+                      <Img
+                        alt="..."
+                        fluid={specials[5].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4} lg={4}>
+                      <Img
+                        alt="..."
+                        fluid={specials[7].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
+                      <Img
+                        alt="..."
+                        fluid={specials[6].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
+                      <Img
+                        alt="..."
+                        fluid={specials[8].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
                     </GridItem>
