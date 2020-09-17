@@ -16,8 +16,7 @@ import reviewsTitleImg from "../images/branding/reviewsTitle.png"
 
 class SectionPills extends React.Component {
   render() {
-    const { classes, reviews } = this.props
-    console.log(this.props)
+    const { classes } = this.props
     return (
       <div className={classes.section}>
         <div className={classes.container}>
@@ -43,27 +42,8 @@ class SectionPills extends React.Component {
                       tabIcon: Dashboard,
                       tabContent: (
                         <span>
-                          <p>
-                            Collaboratively administrate empowered markets via
-                            plug-and-play networks. Dynamically procrastinate
-                            B2C users after installed base benefits.
-                          </p>
+                          <p>Reviews go here!</p>
                           <br />
-                          <p>
-                            Dramatically visualize customer directed convergence
-                            without revolutionary ROI. Collaboratively
-                            administrate empowered markets via plug-and-play
-                            networks. Dynamically procrastinate B2C users after
-                            installed base benefits.
-                          </p>
-                          <br />
-                          <p>
-                            Dramatically visualize customer directed convergence
-                            without revolutionary ROI. Collaboratively
-                            administrate empowered markets via plug-and-play
-                            networks. Dynamically procrastinate B2C users after
-                            installed base benefits.
-                          </p>
                         </span>
                       ),
                     },
@@ -72,21 +52,7 @@ class SectionPills extends React.Component {
                       tabIcon: Schedule,
                       tabContent: (
                         <span>
-                          <p>
-                            Efficiently unleash cross-media information without
-                            cross-media value. Quickly maximize timely
-                            deliverables for real-time schemas.
-                          </p>
-                          <br />
-                          <p>
-                            Dramatically maintain clicks-and-mortar solutions
-                            without functional solutions. Dramatically visualize
-                            customer directed convergence without revolutionary
-                            ROI. Collaboratively administrate empowered markets
-                            via plug-and-play networks. Dynamically
-                            procrastinate B2C users after installed base
-                            benefits.
-                          </p>
+                          <p>And another review!</p>
                         </span>
                       ),
                     },
