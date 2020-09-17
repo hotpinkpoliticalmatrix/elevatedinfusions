@@ -12,9 +12,6 @@ const style = {
     paddingRight: "15px",
     paddingLeft: "15px",
     flexBasis: "auto",
-    [theme.breakpoints.up("lg")]: {
-      maxWidth: "90%",
-    },
   },
 }
 
