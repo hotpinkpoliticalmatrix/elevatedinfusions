@@ -67,6 +67,7 @@ const profilePageStyle = {
     },
   },
   menuContainer: {
+    paddingTop: "300px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -83,18 +84,20 @@ const profilePageStyle = {
   menuHead: {
     maxWidth: "200px",
     zIndex: "3",
+    marginBottom: "20px",
     "@media (min-width: 400px)": {
-      maxWidth: "400px",
+      maxWidth: "225px",
       width: "105%",
       height: "auto",
     },
     "@media (min-width: 767px)": {
-      // margin: "200px 40px",
-      maxWidth: "600px",
+      maxWidth: "400px",
       width: "105%",
       height: "auto",
+      marginBottom: "50px",
     },
     "@media (min-width: 960px)": {
+      maxWidth: "450px",
       margin: "150px 40px",
       width: "100%",
       height: "auto",

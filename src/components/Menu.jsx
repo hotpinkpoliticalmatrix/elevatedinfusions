@@ -2,7 +2,7 @@ import React from "react"
 import GridItem from "./GridItem"
 import GridContainer from "./GridContainer"
 import withStyles from "@material-ui/core/styles/withStyles"
-import logo from "../images/branding/menu.png"
+import logo from "../images/branding/menuLogo.png"
 import menu from "../images/mainProducts/menu.jpg"
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
 

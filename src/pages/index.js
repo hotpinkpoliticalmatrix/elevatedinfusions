@@ -9,7 +9,9 @@ import Hero from "../components/Hero"
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
 import IntroContainer from "../components/introContainer"
 import Menu from "../components/Menu"
-import Transition from "../components/transition"
+import BrownieParallax from "../components/BrownieParallax"
+import AssortmentParallax from "../components/AssortmentParallax"
+import Reviews from "../components/Reviews"
 
 const IndexPage = props => {
   const { data, classes } = props
@@ -21,8 +23,10 @@ const IndexPage = props => {
       <SEO title="Elevated Infusions Bakery" />
       <Hero hero={hero} classes={classes} />
       <IntroContainer intro={intro} products={products} />
-      <Transition />
+      <BrownieParallax />
       <Menu />
+      <AssortmentParallax />
+      <Reviews />
     </Layout>
   )
 }

@@ -2,7 +2,7 @@ import { container, title } from "../../../material-kit-react"
 
 const pillsStyle = {
   section: {
-    padding: "70px 0",
+    paddingTop: "350px",
   },
   container,
   title: {
@@ -10,6 +10,40 @@ const pillsStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
+  },
+  menuHead: {
+    maxWidth: "200px",
+    zIndex: "3",
+    "@media (min-width: 400px)": {
+      maxWidth: "350px",
+      width: "105%",
+      height: "auto",
+    },
+    "@media (min-width: 767px)": {
+      // margin: "200px 40px",
+      maxWidth: "450px",
+      width: "105%",
+      height: "auto",
+    },
+    "@media (min-width: 960px)": {
+      maxWidth: "500px",
+      margin: "150px 0 0 0",
+      width: "100%",
+      height: "auto",
+    },
+  },
+  menuContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    textAlign: "center",
+    "@media (min-width: 767px)": {
+      margin: "0px",
+      display: "flex",
+      justifyContent: "center",
+      alignContent: "center",
+      flexDirection: "row",
+    },
   },
 }
 

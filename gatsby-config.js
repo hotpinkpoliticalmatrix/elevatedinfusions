@@ -17,8 +17,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
-    "gatsby-remark-embed-video",
-    "gatsby-remark-responsive-iframe",
     "gatsby-remark-images",
     {
       resolve: `gatsby-source-filesystem`,

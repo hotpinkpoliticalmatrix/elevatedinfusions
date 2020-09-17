@@ -28,7 +28,6 @@ class ImgGallery extends React.Component {
     const cinnaBuns = products.filter(
       product => product.name === "Cinnamon Buns"
     )
-    const krispies = products.filter(product => product.name === "Krispies")
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
     return (
       <GridContainer id="products" justify="center">
@@ -50,7 +49,7 @@ class ImgGallery extends React.Component {
                       />
                       <Img
                         alt="..."
-                        fluid={cupcakes[3].img.childImageSharp.fluid}
+                        fluid={cupcakes[8].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
 
@@ -90,7 +89,7 @@ class ImgGallery extends React.Component {
                       />
                       <Img
                         alt="..."
-                        fluid={cupcakes[8].img.childImageSharp.fluid}
+                        fluid={cupcakes[3].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
                     </GridItem>
@@ -113,6 +112,11 @@ class ImgGallery extends React.Component {
                         fluid={brownies[5].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />{" "}
+                      <Img
+                        alt="..."
+                        fluid={brownies[2].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />{" "}
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4} lg={4}>
                       <Img
@@ -125,6 +129,11 @@ class ImgGallery extends React.Component {
                         fluid={brownies[4].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />{" "}
+                      <Img
+                        alt="..."
+                        fluid={brownies[6].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />{" "}
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4} lg={4}>
                       <Img
@@ -135,6 +144,11 @@ class ImgGallery extends React.Component {
                       <Img
                         alt="..."
                         fluid={brownies[1].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />{" "}
+                      <Img
+                        alt="..."
+                        fluid={brownies[7].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />{" "}
                     </GridItem>
@@ -154,6 +168,11 @@ class ImgGallery extends React.Component {
                       />{" "}
                       <Img
                         alt="..."
+                        fluid={cerealSeries[8].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
+                      <Img
+                        alt="..."
                         fluid={cerealSeries[1].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
@@ -169,6 +188,11 @@ class ImgGallery extends React.Component {
                         fluid={cerealSeries[3].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
+                      <Img
+                        alt="..."
+                        fluid={cerealSeries[7].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4} lg={4}>
                       <Img
@@ -181,12 +205,17 @@ class ImgGallery extends React.Component {
                         fluid={cerealSeries[5].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
+                      <Img
+                        alt="..."
+                        fluid={cerealSeries[6].img.childImageSharp.fluid}
+                        className={navImageClasses}
+                      />
                     </GridItem>
                   </GridContainer>
                 ),
               },
               {
-                tabButton: "Cinnabuns",
+                tabButton: "Buns",
                 tabIcon: MoodIcon,
                 tabContent: (
                   <GridContainer justify="center">
@@ -211,50 +240,6 @@ class ImgGallery extends React.Component {
                       <Img
                         alt="..."
                         fluid={cinnaBuns[3].img.childImageSharp.fluid}
-                        className={navImageClasses}
-                      />
-                    </GridItem>
-                  </GridContainer>
-                ),
-              },
-              {
-                tabButton: "Krispies",
-                tabIcon: ThumbUpIcon,
-                tabContent: (
-                  <GridContainer justify="center">
-                    <GridItem xs={12} sm={12} md={4} lg={4}>
-                      <Img
-                        alt="..."
-                        fluid={krispies[0].img.childImageSharp.fluid}
-                        className={navImageClasses}
-                      />{" "}
-                      <Img
-                        alt="..."
-                        fluid={krispies[1].img.childImageSharp.fluid}
-                        className={navImageClasses}
-                      />
-                    </GridItem>
-                    <GridItem xs={12} sm={12} md={4} lg={4}>
-                      <Img
-                        alt="..."
-                        fluid={krispies[2].img.childImageSharp.fluid}
-                        className={navImageClasses}
-                      />
-                      <Img
-                        alt="..."
-                        fluid={krispies[3].img.childImageSharp.fluid}
-                        className={navImageClasses}
-                      />
-                    </GridItem>
-                    <GridItem xs={12} sm={12} md={4} lg={4}>
-                      <Img
-                        alt="..."
-                        fluid={krispies[5].img.childImageSharp.fluid}
-                        className={navImageClasses}
-                      />
-                      <Img
-                        alt="..."
-                        fluid={krispies[4].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
                     </GridItem>

@@ -1,8 +1,8 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
-import parallax2Style from "../styles/material-kit-react/components/parallax2style"
+import brownieParallaxStyle from "../styles/material-kit-react/components/browniesParallaxStyle"
 
-const Transition = ({ classes }) => {
+const BrownieParallax = ({ classes }) => {
   return (
     <div className={classes.filter}>
       <div className={classes.parallaxContainer} />
@@ -10,4 +10,4 @@ const Transition = ({ classes }) => {
   )
 }
 
-export default withStyles(parallax2Style)(Transition)
+export default withStyles(brownieParallaxStyle)(BrownieParallax)
