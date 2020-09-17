@@ -19,7 +19,6 @@ const IndexPage = props => {
   const intro = data.intro.edges[0].node
   const hero = data.hero.edges[0].node
   const reviews = data.reviews.edges[0].node.exports
-  console.log(reviews)
   return (
     <Layout>
       <SEO title="Elevated Infusions Bakery" />
