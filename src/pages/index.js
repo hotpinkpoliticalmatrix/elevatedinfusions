@@ -9,6 +9,9 @@ import Hero from "../components/Hero"
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
 import IntroContainer from "../components/introContainer"
 import Menu from "../components/Menu"
+import smores from "../images/mainProducts/browniessmore.jpg"
+import Parallax from "../components/parallax"
+import Transition from "../components/transition"
 
 const IndexPage = props => {
   const { data, classes } = props
@@ -18,8 +21,11 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title="Elevated Infusions Bakery" />
+      {/* <Parallax filter image={smores} /> */}
       <Hero hero={hero} classes={classes} />
       <IntroContainer intro={intro} products={products} />
+      <Transition />
+      {/* <img src={smores} objectFit="cover" maxHeight="400px" /> */}
       <Menu />
     </Layout>
   )

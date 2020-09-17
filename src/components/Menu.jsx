@@ -5,6 +5,7 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import logo from "../images/branding/menu.png"
 import menu from "../images/mainProducts/menu.jpg"
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
+import Parallax from "./parallax"
 
 function Menu({ classes }) {
   return (
@@ -16,7 +17,7 @@ function Menu({ classes }) {
         <div className={classes.menuDiv}>
           <img src={menu} id="menu" className={classes.menu} alt="menu" />
         </div>
-      </GridItem>
+      </GridItem>{" "}
     </GridContainer>
   )
 }
