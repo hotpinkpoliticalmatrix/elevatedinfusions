@@ -31,7 +31,7 @@ const Hero = ({ classes, hero }) => {
             <Button
               color="danger"
               size="lg"
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="https://www.youtube.com/watch?v=WfT2MdC6aYw"
               target="_blank"
               rel="noopener noreferrer"
             >
