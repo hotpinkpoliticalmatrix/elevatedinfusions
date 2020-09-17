@@ -99,9 +99,6 @@ const profilePageStyle = {
       width: "100%",
       height: "auto",
     },
-    "@media (min-width: 960px)": {
-      margin: "200px 60px",
-    },
   },
   menu: {
     borderRadius: "50%",

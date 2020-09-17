@@ -5,7 +5,6 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import logo from "../images/branding/menu.png"
 import menu from "../images/mainProducts/menu.jpg"
 import profilePageStyle from "../styles/material-kit-react/views/profilePage"
-import Parallax from "./parallax"
 
 function Menu({ classes }) {
   return (

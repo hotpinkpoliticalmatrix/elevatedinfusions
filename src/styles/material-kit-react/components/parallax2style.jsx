@@ -23,21 +23,6 @@ const parallax2Style = {
   filter: {
     backdropFilter: "grayscale(0.5) opacity(0.8)",
   },
-  // filter: {
-  //   "&:before": {
-  //     background: "rgba(0, 0, 0, 0.5)",
-  //   },
-  //   "&:after,&:before": {
-  //     position: "absolute",
-  //     zIndex: "1",
-  //     width: "100%",
-  //     height: "100%",
-  //     display: "block",
-  //     left: "0",
-  //     top: "0",
-  //     content: "''",
-  //   },
-  // },
 }
 
 export default parallax2Style
