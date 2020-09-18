@@ -38,11 +38,15 @@ class ImgGallery extends React.Component {
                 tabContent: (
                   <GridContainer justify="center">
                     <GridItem xs={10} sm={10} md={4} lg={4}>
-                      <Img
-                        alt="..."
-                        fluid={cupcakes[0].img.childImageSharp.fluid}
-                        className={navImageClasses}
-                      />
+                      <picture>
+                        {" "}
+                        <Img
+                          alt="..."
+                          fluid={cupcakes[0].img.childImageSharp.fluid}
+                          className={navImageClasses}
+                        />
+                      </picture>
+
                       <Img
                         alt="..."
                         fluid={cupcakes[8].img.childImageSharp.fluid}
