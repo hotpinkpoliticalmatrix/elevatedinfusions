@@ -7,19 +7,27 @@ const landingPageStyle = {
     ...container,
   },
   imgWrapper: {
-    maxWidth: "200px",
-    height: "auto",
-    "@media (min-width: 400px)": {},
+    // position: "initial",
+    // overflow: "hidden",
+    // display: "inline-block",
+    // minWidth: "200px",
+    // height: "auto",
+    // "@media (min-width: 400px)": {},
   },
   img: {
-    // maxWidth: "200px",
-    // height: "auto",
+    height: "60px",
+    minWidth: "290px",
     "@media (min-width: 400px)": {
-      // maxWidth: "350px",
-      // width: "105%",
-      // height: "auto",
-      minHeight: "100px",
-      width: "100%",
+      minWidth: "400px",
+      height: "80px",
+    },
+    "@media (min-width: 767px)": {
+      minWidth: "500px",
+      height: "100px",
+    },
+    "@media (min-width: 960px)": {
+      minWidth: "600px",
+      height: "120px",
     },
   },
   title: {

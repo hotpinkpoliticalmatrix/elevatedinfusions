@@ -65,22 +65,22 @@ export const pageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxHeight: 300) {
-                  base64
-                  aspectRatio
                   src
                   srcSet
+                  srcWebp
+                  srcSetWebp
                   sizes
                 }
               }
             }
             logo {
               childImageSharp {
-                fixed(height: 140, quality: 100) {
-                  aspectRatio
-                  base64
-                  height
+                fluid(quality: 100) {
                   src
-                  width
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  sizes
                 }
               }
             }
@@ -98,10 +98,10 @@ export const pageQuery = graphql`
             image {
               childImageSharp {
                 fluid(quality: 100) {
-                  base64
-                  aspectRatio
                   src
                   srcSet
+                  srcWebp
+                  srcSetWebp
                   sizes
                 }
               }
@@ -109,10 +109,10 @@ export const pageQuery = graphql`
             logo {
               childImageSharp {
                 fluid(maxHeight: 100, quality: 100) {
-                  base64
-                  aspectRatio
                   src
                   srcSet
+                  srcWebp
+                  srcSetWebp
                   sizes
                 }
               }
@@ -124,10 +124,10 @@ export const pageQuery = graphql`
             titleImg {
               childImageSharp {
                 fluid(maxHeight: 200, quality: 100) {
-                  base64
-                  aspectRatio
                   src
                   srcSet
+                  srcWebp
+                  srcSetWebp
                   sizes
                 }
               }

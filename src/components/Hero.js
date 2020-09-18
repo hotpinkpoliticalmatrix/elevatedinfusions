@@ -16,7 +16,8 @@ const Hero = ({ classes, hero }) => {
         <div className={classes.imgWrapper}>
           <Img
             className={classes.img}
-            fixed={hero.frontmatter.logo.childImageSharp.fixed}
+            fixed={hero.frontmatter.logo.childImageSharp.fluid}
+            // style={{ minWidth: "290px" }}
           />
         </div>
         <GridContainer>
