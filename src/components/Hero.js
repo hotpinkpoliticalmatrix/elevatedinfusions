@@ -10,6 +10,7 @@ import landingPageStyle from "../styles/material-kit-react/views/landingPage"
 import Typography from "@material-ui/core/Typography"
 
 const Hero = ({ classes, hero }) => {
+  console.log(hero)
   return (
     <Parallax filter image={require("../images/mainProducts/assortment.png")}>
       <div className={classes.container}>
@@ -31,7 +32,7 @@ const Hero = ({ classes, hero }) => {
             <Button
               color="danger"
               size="lg"
-              href="https://www.youtube.com/watch?v=WfT2MdC6aYw"
+              href="/reviews"
               target="_blank"
               rel="noopener noreferrer"
             >

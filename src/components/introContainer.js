@@ -46,16 +46,17 @@ class IntroContainer extends React.Component {
                     <Button justIcon link className={classes.margin5}>
                       <FaFacebook />
                     </Button>
+                    <div className={classes.description}>
+                      <p>{intro.frontmatter.intro} </p>
+                    </div>
+                    <div className={classes.description}>
+                      <p>{intro.frontmatter.main} </p>
+                    </div>
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
-            <div className={classes.description}>
-              <p>{intro.frontmatter.intro} </p>
-            </div>
-            <div className={classes.description}>
-              <p>{intro.frontmatter.main} </p>
-            </div>
+
             <ImgGallery products={products} classes={classes} />
           </div>
         </div>
