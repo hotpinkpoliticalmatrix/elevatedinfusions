@@ -20,7 +20,6 @@ const pillsStyle = {
       height: "auto",
     },
     "@media (min-width: 767px)": {
-      // margin: "200px 40px",
       maxWidth: "450px",
       paddingBottom: "40px",
 
@@ -28,7 +27,6 @@ const pillsStyle = {
       height: "auto",
     },
     "@media (min-width: 960px)": {
-      maxWidth: "500px",
       margin: "150px 0 0 0",
       width: "100%",
       height: "auto",
@@ -36,7 +34,6 @@ const pillsStyle = {
   },
   menuContainer: {
     display: "flex",
-    flexDirection: "column",
     justifyContent: "center",
     textAlign: "center",
     "@media (min-width: 767px)": {
@@ -44,7 +41,6 @@ const pillsStyle = {
       display: "flex",
       justifyContent: "center",
       alignContent: "center",
-      flexDirection: "row",
     },
   },
 }

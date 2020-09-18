@@ -31,13 +31,18 @@ class IntroContainer extends React.Component {
                 <div className={classes.profile}>
                   <img src={logo} alt="logo" className={imageClasses} />
                 </div>
-                <img
-                  src={treet}
-                  className={classes.treet}
-                  maxWidth="600px"
-                  alt="treetyourself"
-                />
-
+              </GridItem>
+            </GridContainer>
+            <div className={classes.treetContainer}>
+              <img
+                src={treet}
+                className={classes.treet}
+                minWidth="200px"
+                alt="treetyourself"
+              />
+            </div>
+            <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={6} lg={8}>
                 <div className={classes.profile}>
                   <div className={classes.name}>
                     <Button justIcon link className={classes.margin5}>

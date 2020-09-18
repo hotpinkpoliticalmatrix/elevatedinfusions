@@ -58,23 +58,46 @@ const profilePageStyle = {
     margin: "20px 0px 20px 0px",
     textAlign: "center",
   },
-  treet: {
+  treetContainer: {
+    display: "flex",
+    justifyContent: "center",
     textAlign: "center",
-    "& img": {
+    "@media (min-width: 767px)": {
+      display: "flex",
+      justifyContent: "center",
+      alignContent: "center",
+    },
+  },
+  treet: {
+    "@media (min-width: 400px)": {
+      maxWidth: "350px",
+      width: "105%",
+      height: "auto",
+    },
+    "@media (min-width: 767px)": {
+      // margin: "200px 40px",
+      maxWidth: "450px",
+      // paddingBottom: "40px",
+
+      width: "105%",
+      height: "auto",
+    },
+    "@media (min-width: 960px)": {
+      maxWidth: "500px",
+      // margin: "150px 0 0 0",
       width: "100%",
-      margin: "0 auto",
-      transform: "translate3d(0, -50%, 0)",
+      height: "auto",
     },
   },
   menuContainer: {
-    paddingTop: "270px",
+    paddingTop: "100px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     textAlign: "center",
     backgroundColor: warningColor,
     "@media (min-width: 767px)": {
-      paddingTop: "160px",
+      // paddingTop: "100px",
       margin: "0px",
       display: "flex",
       justifyContent: "center",
@@ -83,7 +106,7 @@ const profilePageStyle = {
     },
   },
   menuHead: {
-    maxWidth: "200px",
+    paddingTop: "150px",
     zIndex: "3",
     marginBottom: "50px",
     "@media (min-width: 400px)": {
@@ -92,16 +115,18 @@ const profilePageStyle = {
       height: "auto",
     },
     "@media (min-width: 767px)": {
-      maxWidth: "370px",
+      maxWidth: "270px",
       width: "105%",
       height: "auto",
       marginBottom: "50px",
+      paddingTop: "100px",
     },
     "@media (min-width: 960px)": {
       maxWidth: "450px",
       margin: "150px 40px",
       width: "100%",
       height: "auto",
+      paddingTop: "0",
     },
   },
   menu: {
