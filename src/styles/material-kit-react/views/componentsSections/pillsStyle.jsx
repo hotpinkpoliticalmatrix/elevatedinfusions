@@ -2,7 +2,7 @@ import { container, title } from "../../../material-kit-react"
 
 const pillsStyle = {
   section: {
-    paddingTop: "350px",
+    paddingTop: "250px",
   },
   container,
   title: {
@@ -22,6 +22,8 @@ const pillsStyle = {
     "@media (min-width: 767px)": {
       // margin: "200px 40px",
       maxWidth: "450px",
+      paddingBottom: "40px",
+
       width: "105%",
       height: "auto",
     },

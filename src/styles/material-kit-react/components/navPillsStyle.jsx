@@ -34,10 +34,10 @@ const navPillsStyle = theme => ({
     position: "relative",
     display: "block",
     borderRadius: "30px",
-    minWidth: "50px",
+    minWidth: "60px",
     textAlign: "center",
     transition: "all .3s",
-    color: "#555555",
+    color: "#D9B570",
     height: "auto",
     opacity: "1",
     maxWidth: "100%",
@@ -117,7 +117,7 @@ const navPillsStyle = theme => ({
   },
   rose: {
     "&,&:hover": {
-      color: "#FFFFFF",
+      color: successColor,
       backgroundColor: roseColor,
       boxShadow:
         "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4)",

@@ -37,7 +37,7 @@ class ImgGallery extends React.Component {
                 tabIcon: CakeIcon,
                 tabContent: (
                   <GridContainer justify="center">
-                    <GridItem xs={12} sm={12} md={4} lg={4}>
+                    <GridItem xs={10} sm={10} md={4} lg={4}>
                       <Img
                         alt="..."
                         fluid={cupcakes[0].img.childImageSharp.fluid}
@@ -55,7 +55,7 @@ class ImgGallery extends React.Component {
                         className={navImageClasses}
                       />
                     </GridItem>
-                    <GridItem xs={12} sm={12} md={4} lg={4}>
+                    <GridItem xs={10} sm={10} md={4} lg={4}>
                       <Img
                         alt="..."
                         fluid={cupcakes[2].img.childImageSharp.fluid}
@@ -72,7 +72,7 @@ class ImgGallery extends React.Component {
                         className={navImageClasses}
                       />
                     </GridItem>
-                    <GridItem xs={12} sm={12} md={4} lg={4}>
+                    <GridItem xs={10} sm={10} md={4} lg={4}>
                       <Img
                         alt="..."
                         fluid={cupcakes[6].img.childImageSharp.fluid}
@@ -127,7 +127,7 @@ class ImgGallery extends React.Component {
                       />{" "}
                       <Img
                         alt="..."
-                        fluid={brownies[6].img.childImageSharp.fluid}
+                        fluid={brownies[8].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />{" "}
                     </GridItem>
@@ -228,7 +228,7 @@ class ImgGallery extends React.Component {
                       />
                       <Img
                         alt="..."
-                        fluid={specials[4].img.childImageSharp.fluid}
+                        fluid={specials[8].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
                     </GridItem>
@@ -260,9 +260,10 @@ class ImgGallery extends React.Component {
                         fluid={specials[6].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
+
                       <Img
                         alt="..."
-                        fluid={specials[8].img.childImageSharp.fluid}
+                        fluid={specials[4].img.childImageSharp.fluid}
                         className={navImageClasses}
                       />
                     </GridItem>

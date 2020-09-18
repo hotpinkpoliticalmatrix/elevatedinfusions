@@ -18,7 +18,6 @@ const IndexPage = props => {
   const products = data.products.edges[0].node.exports.products
   const intro = data.intro.edges[0].node
   const hero = data.hero.edges[0].node
-  const reviews = data.reviews.edges[0].node.exports
   return (
     <Layout>
       <SEO title="Elevated Infusions Bakery" />
@@ -27,7 +26,7 @@ const IndexPage = props => {
       <BrownieParallax />
       <Menu />
       <AssortmentParallax />
-      <Reviews reviews={reviews} />
+      <Reviews />
     </Layout>
   )
 }
@@ -132,26 +131,6 @@ export const pageQuery = graphql`
                 }
               }
             }
-          }
-        }
-      }
-    }
-    reviews: allMdx(filter: { fileAbsolutePath: { regex: "/reviews/" } }) {
-      edges {
-        node {
-          exports {
-            reviews {
-              author
-              date
-              path
-              title
-              videoSourceURL
-              videoTitle
-            }
-          }
-          frontmatter {
-            title
-            subtitle
           }
         }
       }

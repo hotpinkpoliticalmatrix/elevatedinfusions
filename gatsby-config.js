@@ -16,6 +16,21 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-remark-embed-video`,
+      options: {
+        width: 800,
+        ratio: 1.77,
+        related: false,
+        noIframeBorder: true,
+      },
+    },
+    {
+      resolve: `gatsby-remark-responsive-iframe`,
+      options: {
+        wrapperStyle: `margin-bottom: 1.0725rem`,
+      },
+    },
     `gatsby-plugin-netlify`,
     "gatsby-remark-images",
     {

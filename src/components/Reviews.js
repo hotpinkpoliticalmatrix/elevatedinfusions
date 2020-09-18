@@ -4,22 +4,21 @@ import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
 
 // @material-ui/icons
-import Dashboard from "@material-ui/icons/Dashboard"
-import Schedule from "@material-ui/icons/Schedule"
-
+import WhatshotIcon from "@material-ui/icons/Whatshot"
+import CakeIcon from "@material-ui/icons/Cake"
 // core components
 import GridContainer from "./GridContainer.jsx"
 import GridItem from "./GridItem.jsx"
 import NavPills from "./NavPills.jsx"
 import pillsStyle from "../styles/material-kit-react/views/componentsSections/pillsStyle"
 import reviewsTitleImg from "../images/branding/reviewsTitle.png"
-
+import Video from "./Video"
 class SectionPills extends React.Component {
   render() {
     const { classes } = this.props
     return (
       <div className={classes.section}>
-        <div className={classes.container}>
+        <div id="reviews" className={classes.container}>
           <div id="navigation-pills">
             <GridContainer className={classes.menuContainer}>
               <GridItem xs={10} xm={10} md={6}>
@@ -29,7 +28,7 @@ class SectionPills extends React.Component {
                   className={classes.menuHead}
                 />
               </GridItem>
-              <GridItem xs={12} sm={12} md={12} lg={6}>
+              <GridItem xs={12} sm={12} md={12}>
                 <NavPills
                   color="rose"
                   horizontal={{
@@ -38,21 +37,27 @@ class SectionPills extends React.Component {
                   }}
                   tabs={[
                     {
-                      tabButton: "Dashboard",
-                      tabIcon: Dashboard,
+                      tabButton: "Campfire Burnout",
+                      tabIcon: WhatshotIcon,
                       tabContent: (
                         <span>
-                          <p>Reviews go here!</p>
+                          <Video
+                            videoSrcURL="https://www.youtube.com/embed/vvJPpgWvGpA?rel=0"
+                            videoTitle="Campfire Burnout"
+                          />
                           <br />
                         </span>
                       ),
                     },
                     {
-                      tabButton: "Schedule",
-                      tabIcon: Schedule,
+                      tabButton: "Funfetti Cupcake",
+                      tabIcon: CakeIcon,
                       tabContent: (
                         <span>
-                          <p>And another review!</p>
+                          <Video
+                            videoSrcURL="https://www.youtube.com/embed/WfT2MdC6aYw?rel=0"
+                            videoTitle="Campfire Burnout"
+                          />
                         </span>
                       ),
                     },
