@@ -6,9 +6,21 @@ const landingPageStyle = {
     color: "#FFFFFF",
     ...container,
   },
+  imgWrapper: {
+    maxWidth: "200px",
+    height: "auto",
+    "@media (min-width: 400px)": {},
+  },
   img: {
-    minHeight: "100px",
-    width: "100%",
+    // maxWidth: "200px",
+    // height: "auto",
+    "@media (min-width: 400px)": {
+      // maxWidth: "350px",
+      // width: "105%",
+      // height: "auto",
+      minHeight: "100px",
+      width: "100%",
+    },
   },
   title: {
     ...title,

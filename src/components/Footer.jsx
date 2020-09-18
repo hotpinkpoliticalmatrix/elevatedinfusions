@@ -31,7 +31,7 @@ function Footer({ ...props }) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.instagram.com/elevateyourinfusions/"
+                href="https://www.instagram.com/elevateyourinfusions/?rel='noopener'"
                 className={classes.block}
                 target="_blank"
               >
@@ -45,7 +45,7 @@ function Footer({ ...props }) {
           &copy; {1900 + new Date().getYear()}, made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://staceyeliuk.dev"
+            href="https://staceyeliuk.dev?rel='noopener'"
             className={aClasses}
             target="_blank"
           >
