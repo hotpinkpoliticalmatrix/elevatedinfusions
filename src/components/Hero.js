@@ -31,8 +31,7 @@ const Hero = ({ classes, hero }) => {
             <Button
               color="danger"
               size="lg"
-              href="/reviews"
-              target="_blank"
+              href="/#reviews"
               rel="noopener noreferrer"
             >
               <FaPlay />
