@@ -1,5 +1,4 @@
 const config = require("./src/config")
-const theme = require("./src/styles/Theme")
 
 module.exports = {
   siteMetadata: {
@@ -53,8 +52,8 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteShortTitle,
         start_url: `/`,
-        background_color: theme.palette.background.main,
-        theme_color: theme.palette.primary.main,
+        background_color: "#746044",
+        theme_color: "#055365",
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

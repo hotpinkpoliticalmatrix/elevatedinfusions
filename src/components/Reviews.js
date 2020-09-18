@@ -10,7 +10,7 @@ import CakeIcon from "@material-ui/icons/Cake"
 import GridContainer from "./GridContainer.jsx"
 import GridItem from "./GridItem.jsx"
 import NavPills from "./NavPills.jsx"
-import pillsStyle from "../styles/material-kit-react/views/componentsSections/pillsStyle"
+import pillsStyle from "../styles/material-kit-react/components/pillsStyle"
 import reviewsTitleImg from "../images/branding/reviewsTitle.png"
 import Video from "./Video"
 class SectionPills extends React.Component {
