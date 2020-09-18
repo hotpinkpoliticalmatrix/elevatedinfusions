@@ -6,19 +6,11 @@ const landingPageStyle = {
     color: "#FFFFFF",
     ...container,
   },
-  imgWrapper: {
-    // position: "initial",
-    // overflow: "hidden",
-    // display: "inline-block",
-    // minWidth: "200px",
-    // height: "auto",
-    // "@media (min-width: 400px)": {},
-  },
   img: {
     height: "60px",
     minWidth: "290px",
     "@media (min-width: 400px)": {
-      minWidth: "400px",
+      minWidth: "360px",
       height: "80px",
     },
     "@media (min-width: 767px)": {
