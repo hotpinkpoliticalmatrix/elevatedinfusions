@@ -21,7 +21,7 @@ class SectionPills extends React.Component {
         <div id="reviews" className={classes.container}>
           <div id="navigation-pills">
             <GridContainer className={classes.menuContainer}>
-              <GridItem xs={10} xm={10} md={6}>
+              <GridItem xs={10} sm={10} md={6}>
                 <img
                   alt="reviews"
                   src={reviewsTitleImg}
@@ -32,8 +32,8 @@ class SectionPills extends React.Component {
                 <NavPills
                   color="rose"
                   horizontal={{
-                    tabsGrid: { xs: 12, sm: 4, md: 4 },
-                    contentGrid: { xs: 12, sm: 8, md: 8 },
+                    tabsGrid: { xs: 12, sm: 12, md: 4 },
+                    contentGrid: { xs: 12, sm: 12, md: 8 },
                   }}
                   tabs={[
                     {

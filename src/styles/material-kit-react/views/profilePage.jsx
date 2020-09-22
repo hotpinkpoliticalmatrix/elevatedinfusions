@@ -160,7 +160,6 @@ const profilePageStyle = {
     "@media (min-width: 1080px)": {
       maxWidth: "700px",
       margin: "290px 0 30px",
-      // padding: "50px",
     },
   },
 }
