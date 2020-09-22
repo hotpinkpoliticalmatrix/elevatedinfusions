@@ -41,7 +41,7 @@ const navPillsStyle = theme => ({
     height: "auto",
     opacity: "1",
     maxWidth: "100%",
-    margin: "0 5px",
+    margin: "0 5px 10px",
   },
   pillsWithIcons: {
     borderRadius: "10px",

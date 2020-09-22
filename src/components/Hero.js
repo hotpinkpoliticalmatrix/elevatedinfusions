@@ -13,12 +13,10 @@ const Hero = ({ classes, hero }) => {
   return (
     <Parallax filter image={require("../images/mainProducts/assortment.png")}>
       <div className={classes.container}>
-        {/* <div className={classes.imgWrapper}> */}
         <Img
           className={classes.img}
           fixed={hero.frontmatter.logo.childImageSharp.fluid}
         />
-        {/* </div> */}
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
             <Typography

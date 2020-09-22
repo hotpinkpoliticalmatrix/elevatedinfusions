@@ -42,20 +42,33 @@ class IntroContainer extends React.Component {
               />
             </div>
             <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={6} lg={8}>
+              <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
+                  <Button
+                    justIcon
+                    href="https://www.instagram.com/elevateyourinfusions"
+                    target="_blank"
+                    link
+                    className={classes.margin5}
+                  >
+                    <FaInstagram />
+                  </Button>
+                  <Button
+                    href="https://www.facebook.com/Elevateyourinfusions"
+                    target="_blank"
+                    justIcon
+                    link
+                    className={classes.margin5}
+                  >
+                    <FaFacebook />
+                  </Button>
                   <div className={classes.name}>
-                    <Button justIcon link className={classes.margin5}>
-                      <FaInstagram />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <FaFacebook />
-                    </Button>
                     <div className={classes.description}>
-                      <p>{intro.frontmatter.intro} </p>
-                    </div>
-                    <div className={classes.description}>
-                      <p>{intro.frontmatter.main} </p>
+                      <p>
+                        {intro.frontmatter.intro} <br />
+                        <br />
+                        {intro.frontmatter.main}{" "}
+                      </p>
                     </div>
                   </div>
                 </div>
