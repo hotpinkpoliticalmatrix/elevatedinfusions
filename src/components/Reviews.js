@@ -40,13 +40,14 @@ class SectionPills extends React.Component {
                       tabButton: "Campfire Burnout",
                       tabIcon: WhatshotIcon,
                       tabContent: (
-                        <span>
+                        <div>
                           <Video
+                            className={classes.video}
                             videoSrcURL="https://www.youtube.com/embed/vvJPpgWvGpA?rel=0"
                             videoTitle="Campfire Burnout"
                           />
                           <br />
-                        </span>
+                        </div>
                       ),
                     },
                     {
@@ -55,6 +56,7 @@ class SectionPills extends React.Component {
                       tabContent: (
                         <span>
                           <Video
+                            className={classes.video}
                             videoSrcURL="https://www.youtube.com/embed/WfT2MdC6aYw?rel=0"
                             videoTitle="Campfire Burnout"
                           />

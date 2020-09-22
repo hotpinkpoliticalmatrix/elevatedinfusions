@@ -121,7 +121,7 @@ const profilePageStyle = {
     paddingTop: "170px",
     zIndex: "3",
     marginBottom: "20px",
-    maxWidth: "170px",
+    maxWidth: "200px",
     "@media (min-width: 400px)": {
       width: "105%",
       height: "auto",
@@ -140,7 +140,7 @@ const profilePageStyle = {
     },
     "@media (min-width: 1080px)": {
       margin: "500px 60px 25px",
-      maxWidth: "240px",
+      maxWidth: "300px",
       width: "100%",
       height: "auto",
       paddingTop: "0",
