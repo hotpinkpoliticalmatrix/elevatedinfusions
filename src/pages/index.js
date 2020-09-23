@@ -15,7 +15,6 @@ import Reviews from "../components/Reviews"
 
 const IndexPage = props => {
   const { data, classes } = props
-  console.log(props)
   const products = data.products.edges[0].node.exports.products
   const intro = data.intro.edges[0].node
   const hero = data.hero.edges[0].node
