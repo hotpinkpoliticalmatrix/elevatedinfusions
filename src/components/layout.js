@@ -14,17 +14,7 @@ import Footer from "./Footer"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+export const PureLayout = props => {
   return (
     <>
       <Header
@@ -36,12 +26,25 @@ const Layout = ({ children }) => {
           height: 300,
           color: "primary",
         }}
-        siteTitle={data.site.siteMetadata.title}
+        siteTitle={props.data.site.siteMetadata.title}
       />
-      <main>{children}</main>
+      <main>{props.children}</main>
       <Footer />
     </>
   )
+}
+
+export const Layout = props => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+  return <PureLayout {...props} data={data} />
 }
 
 Layout.propTypes = {

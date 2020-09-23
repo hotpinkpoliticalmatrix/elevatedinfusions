@@ -1,6 +1,6 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
-import "typeface-roboto"
+// import "typeface-roboto"
 
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
@@ -15,6 +15,7 @@ import Reviews from "../components/Reviews"
 
 const IndexPage = props => {
   const { data, classes } = props
+  console.log(props)
   const products = data.products.edges[0].node.exports.products
   const intro = data.intro.edges[0].node
   const hero = data.hero.edges[0].node
