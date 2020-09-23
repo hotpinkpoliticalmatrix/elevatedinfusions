@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography"
 
 const Hero = ({ classes, hero }) => {
   return (
-    <Parallax filter image={require("../images/mainProducts/assortment.png")}>
+    <Parallax filter image={require("../images/mainProducts/assortment.webp")}>
       <div className={classes.container}>
         <Img
           className={classes.img}

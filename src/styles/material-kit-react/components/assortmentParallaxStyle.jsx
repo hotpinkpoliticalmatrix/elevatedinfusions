@@ -1,4 +1,4 @@
-import assortment from "../../../images/mainProducts/assortment3.jpg"
+import assortment from "../../../images/mainProducts/assortment3.webp"
 
 const assortmentParallaxStyle = {
   parallaxContainer: {

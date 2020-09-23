@@ -9,8 +9,8 @@ import GridItem from "./GridItem.jsx"
 // @material-ui/core components
 import Button from "./button"
 import { FaFacebook, FaInstagram } from "react-icons/fa"
-import logo from "../images/branding/logoBlue.png"
-import treet from "../images/branding/treetyourself.png"
+import logo from "../images/branding/logoBlue.webp"
+import treet from "../images/branding/treetyourself.webp"
 
 class IntroContainer extends React.Component {
   render() {

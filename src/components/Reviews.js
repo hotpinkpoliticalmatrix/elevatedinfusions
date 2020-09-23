@@ -11,7 +11,7 @@ import GridContainer from "./GridContainer.jsx"
 import GridItem from "./GridItem.jsx"
 import NavPills from "./NavPills.jsx"
 import pillsStyle from "../styles/material-kit-react/components/pillsStyle"
-import reviewsTitleImg from "../images/branding/reviewsTitle.png"
+import reviewsTitleImg from "../images/branding/reviewsTitle.webp"
 import Video from "./Video"
 class SectionPills extends React.Component {
   render() {

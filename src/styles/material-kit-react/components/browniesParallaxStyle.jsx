@@ -1,4 +1,4 @@
-import brownies from "../../../images/mainProducts/browniessmore2.jpg"
+import brownies from "../../../images/mainProducts/browniessmore2.webp"
 
 const brownieParallaxStyle = {
   parallaxContainer: {
