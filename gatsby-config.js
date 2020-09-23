@@ -98,14 +98,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        workboxConfig: {
-          globPatterns: ["**/favicon.png"],
-        },
-        precachePages: [`/`],
-      },
-    },
+    `gatsby-plugin-offline`,
   ],
 }
