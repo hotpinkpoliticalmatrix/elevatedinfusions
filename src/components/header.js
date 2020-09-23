@@ -30,7 +30,9 @@ class Header extends React.Component {
   }
   componentDidMount() {
     if (this.props.changeColorOnScroll) {
-      window.addEventListener("scroll", this.headerColorChange)
+      window.addEventListener("scroll", this.headerColorChange, {
+        passive: true,
+      })
     }
   }
   headerColorChange() {
@@ -55,7 +57,9 @@ class Header extends React.Component {
   componentWillUnmount() {
     if (this.props.changeColorOnScroll) {
       typeof window !== "undefined" &&
-        window.removeEventListener("scroll", this.headerColorChange)
+        window.removeEventListener("scroll", this.headerColorChange, {
+          passive: true,
+        })
     }
   }
   render() {

@@ -24,11 +24,13 @@ class Parallax extends React.Component {
     this.setState({
       transform: "translate3d(0," + windowScrollTop + "px,0)",
     })
-    window.addEventListener("scroll", this.resetTransform)
+    window.addEventListener("scroll", this.resetTransform, { passive: true })
   }
   componentWillUnmount() {
     typeof window !== "undefined" &&
-      window.removeEventListener("scroll", this.resetTransform)
+      window.removeEventListener("scroll", this.resetTransform, {
+        passive: true,
+      })
   }
   resetTransform() {
     var windowScrollTop =
