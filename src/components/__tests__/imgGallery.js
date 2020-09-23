@@ -691,7 +691,6 @@ describe("imgGallery", () =>
         name: "Specials",
       },
     ]
-    // console.log("This is data", data)
     const tree = renderer.create(<ImgGallery products={products} />).toJSON()
     expect(tree).toMatchSnapshot()
   }))
