@@ -14,7 +14,6 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-remark-embed-video`,
       options: {
@@ -56,6 +55,7 @@ module.exports = {
         theme_color: "#055365",
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        cache_busting_mode: "none",
       },
     },
     {
@@ -98,6 +98,14 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          globPatterns: ["**/favicon.png"],
+        },
+        precachePages: [`/`],
+      },
+    },
   ],
 }
