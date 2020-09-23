@@ -62,6 +62,7 @@ function HeaderLinks({ ...props }) {
           <Button
             color="transparent"
             href="https://www.facebook.com/Elevateyourinfusions"
+            rel="noopener noreferrer"
             target="_blank"
             className={classes.navLink}
           >
@@ -83,6 +84,7 @@ function HeaderLinks({ ...props }) {
           <Button
             color="transparent"
             href="https://www.instagram.com/elevateyourinfusions"
+            rel="noopener noreferrer"
             target="_blank"
             className={classes.navLink}
           >

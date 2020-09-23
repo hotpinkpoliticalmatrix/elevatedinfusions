@@ -47,6 +47,7 @@ class IntroContainer extends React.Component {
                   <Button
                     justIcon
                     href="https://www.instagram.com/elevateyourinfusions"
+                    rel="noopener noreferrer"
                     target="_blank"
                     link
                     className={classes.margin5}
@@ -55,6 +56,7 @@ class IntroContainer extends React.Component {
                   </Button>
                   <Button
                     href="https://www.facebook.com/Elevateyourinfusions"
+                    rel="noopener noreferrer"
                     target="_blank"
                     justIcon
                     link
