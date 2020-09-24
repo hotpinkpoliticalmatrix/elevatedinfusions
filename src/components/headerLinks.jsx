@@ -22,9 +22,9 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Button color="transparent" href="/#" className={classes.navLink}>
+        <AnchorLink color="transparent" to="/" className={classes.navLink}>
           Home
-        </Button>
+        </AnchorLink>
       </ListItem>
       <ListItem className={classes.listItem}>
         <AnchorLink
