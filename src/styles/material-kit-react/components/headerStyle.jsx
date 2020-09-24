@@ -63,6 +63,7 @@ const headerStyle = {
       color: "inherit",
       background: "transparent",
     },
+    textDecoration: "none",
   },
   appResponsive: {
     margin: "20px 10px",

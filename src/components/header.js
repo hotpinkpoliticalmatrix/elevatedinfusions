@@ -14,7 +14,7 @@ import Drawer from "@material-ui/core/Drawer"
 import Menu from "@material-ui/icons/Menu"
 // core components
 import headerStyle from "../styles/material-kit-react/components/headerStyle"
-import Button from "@material-ui/core/Button"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 class Header extends React.Component {
   constructor(props) {
@@ -79,9 +79,9 @@ class Header extends React.Component {
       [classes.fixed]: fixed,
     })
     const brandComponent = (
-      <Button href="/#" className={classes.title}>
+      <AnchorLink to="/" className={classes.title}>
         {brand}
-      </Button>
+      </AnchorLink>
     )
     return (
       <AppBar className={appBarClasses}>
