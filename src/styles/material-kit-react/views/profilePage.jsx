@@ -159,7 +159,7 @@ const profilePageStyle = {
     },
     "@media (min-width: 1080px)": {
       maxWidth: "700px",
-      margin: "290px 0 30px",
+      // margin: "290px 0 30px",
     },
   },
 }
