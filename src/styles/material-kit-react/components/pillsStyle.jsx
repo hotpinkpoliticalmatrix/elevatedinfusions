@@ -13,20 +13,18 @@ const pillsStyle = {
   },
   menuHead: {
     maxWidth: "250px",
-    // zIndex: "3",
-    marginTop: "-40px",
+    margin: "-40px 0 -20px",
     "@media (min-width: 400px)": {
       maxWidth: "270px",
       width: "105%",
       height: "auto",
     },
     "@media (min-width: 767px)": {
-      paddingBottom: "40px",
-
       width: "105%",
       height: "auto",
     },
     "@media (min-width: 960px)": {
+      paddingBottom: "40px",
       maxWidth: "260px",
       width: "100%",
       height: "auto",
