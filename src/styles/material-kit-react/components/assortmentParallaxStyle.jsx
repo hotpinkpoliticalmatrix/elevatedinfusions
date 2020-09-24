@@ -5,7 +5,7 @@ const assortmentParallaxStyle = {
     backgroundImage: `url(${assortment})`,
 
     /* Set a specific height */
-    minHeight: "500px",
+    minHeight: "300px",
 
     /* Create the parallax scrolling effect */
     backgroundAttachment: "fixed",

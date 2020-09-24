@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-remark-embed-video`,
       options: {

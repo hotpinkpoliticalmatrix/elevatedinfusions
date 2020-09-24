@@ -14,9 +14,9 @@ const pillsStyle = {
   menuHead: {
     maxWidth: "250px",
     // zIndex: "3",
-    margin: "140px 0 -15px",
+    marginTop: "-40px",
     "@media (min-width: 400px)": {
-      maxWidth: "350px",
+      maxWidth: "270px",
       width: "105%",
       height: "auto",
     },
@@ -27,8 +27,7 @@ const pillsStyle = {
       height: "auto",
     },
     "@media (min-width: 960px)": {
-      maxWidth: "370px",
-      margin: "150px 0 0 0",
+      maxWidth: "260px",
       width: "100%",
       height: "auto",
     },

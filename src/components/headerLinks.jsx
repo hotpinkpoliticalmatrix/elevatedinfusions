@@ -13,6 +13,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa"
 
 // core components
 import Button from "./button.jsx"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import headerLinksStyle from "../styles/material-kit-react/components/headerLinksStyle"
 
@@ -26,27 +27,27 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
+        <AnchorLink
           color="transparent"
-          href="/#products"
+          to="/#products"
           className={classes.navLink}
         >
           Products
-        </Button>
+        </AnchorLink>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button color="transparent" href="/#menu" className={classes.navLink}>
+        <AnchorLink color="transparent" to="/#menu" className={classes.navLink}>
           Menu
-        </Button>
+        </AnchorLink>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
+        <AnchorLink
           color="transparent"
-          href="/#reviews"
+          to="/#reviews"
           className={classes.navLink}
         >
           Reviews
-        </Button>
+        </AnchorLink>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip

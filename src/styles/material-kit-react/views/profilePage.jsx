@@ -118,7 +118,7 @@ const profilePageStyle = {
     },
   },
   menuHead: {
-    paddingTop: "170px",
+    paddingTop: "100px",
     zIndex: "3",
     marginBottom: "20px",
     maxWidth: "200px",
@@ -127,12 +127,12 @@ const profilePageStyle = {
       height: "auto",
     },
     "@media (min-width: 600px)": {
-      maxWidth: "190px",
+      maxWidth: "220px",
       width: "105%",
       height: "auto",
     },
     "@media (min-width: 960px)": {
-      margin: "500px 60px 0",
+      margin: "480px 60px 0",
       maxWidth: "240px",
       width: "100%",
       height: "auto",
@@ -154,7 +154,7 @@ const profilePageStyle = {
       maxWidth: "550px",
     },
     "@media (min-width: 960px)": {
-      margin: "280px 0 25px",
+      margin: "235px 0 25px",
       padding: "20px",
     },
     "@media (min-width: 1080px)": {
