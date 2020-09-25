@@ -9,10 +9,9 @@ import CakeIcon from "@material-ui/icons/Cake"
 // core components
 import GridContainer from "./GridContainer.jsx"
 import GridItem from "./GridItem.jsx"
-import NavPills from "./NavPills.jsx"
 import pillsStyle from "../styles/material-kit-react/components/pillsStyle"
 import reviewsTitleImg from "../images/branding/reviewsTitle.webp"
-import Video from "./Video"
+import reviews from "../images/mainProducts/Reviews.png"
 class SectionPills extends React.Component {
   render() {
     const { classes } = this.props
@@ -29,42 +28,7 @@ class SectionPills extends React.Component {
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={12}>
-                <NavPills
-                  color="rose"
-                  horizontal={{
-                    tabsGrid: { xs: 12, sm: 12, md: 4 },
-                    contentGrid: { xs: 12, sm: 12, md: 8 },
-                  }}
-                  tabs={[
-                    {
-                      tabButton: "Campfire Burnout",
-                      tabIcon: WhatshotIcon,
-                      tabContent: (
-                        <div>
-                          <Video
-                            className={classes.video}
-                            videoSrcURL="https://www.youtube.com/embed/vvJPpgWvGpA?rel=0"
-                            videoTitle="Campfire Burnout"
-                          />
-                          <br />
-                        </div>
-                      ),
-                    },
-                    {
-                      tabButton: "Funfetti Cupcake",
-                      tabIcon: CakeIcon,
-                      tabContent: (
-                        <span>
-                          <Video
-                            className={classes.video}
-                            videoSrcURL="https://www.youtube.com/embed/WfT2MdC6aYw?rel=0"
-                            videoTitle="Campfire Burnout"
-                          />
-                        </span>
-                      ),
-                    },
-                  ]}
-                />
+                <img src={reviews} className={classes.reviews} />
               </GridItem>
             </GridContainer>
           </div>

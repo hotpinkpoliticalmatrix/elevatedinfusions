@@ -13,7 +13,7 @@ const pillsStyle = {
   },
   menuHead: {
     maxWidth: "250px",
-    margin: "-40px 0 -20px",
+    marginTop: "-40px",
     "@media (min-width: 400px)": {
       maxWidth: "270px",
       width: "105%",
@@ -24,8 +24,7 @@ const pillsStyle = {
       height: "auto",
     },
     "@media (min-width: 960px)": {
-      paddingBottom: "40px",
-      maxWidth: "260px",
+      maxWidth: "350px",
       width: "100%",
       height: "auto",
     },
@@ -34,6 +33,7 @@ const pillsStyle = {
     display: "flex",
     justifyContent: "center",
     textAlign: "center",
+    alignContent: "center",
     "@media (min-width: 767px)": {
       margin: "0px",
       display: "flex",
@@ -41,8 +41,20 @@ const pillsStyle = {
       alignContent: "center",
     },
   },
-  video: {
+  reviews: {
     maxWidth: "300px",
+    "@media (min-width: 400px)": {
+      maxWidth: "360px",
+    },
+    "@media (min-width: 500px)": {
+      maxWidth: "460px",
+    },
+    // "@media (min-width: 600px)": {
+    //   maxWidth: "560px",
+    // },
+    "@media (min-width: 767px)": {
+      maxWidth: "680px",
+    },
   },
 }
 
