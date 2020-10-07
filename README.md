@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.elevatedinfusions.com">
-    <img alt="Elevate" src="./src/images/branding/circularLogo.png" width="60" />
+    <img alt="Elevate" src="./src/images/branding/circularLogo.png" width="130" />
   </a>
 </p>
 ---
