@@ -35,7 +35,9 @@ const carouselStyle = {
   },
   carousel: {
     padding: "0 25px",
-    borderRadius: "40%",
+  },
+  reviews: {
+    borderRadius: "40px",
   },
 }
 
