@@ -8,17 +8,17 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import GridContainer from "./GridContainer.jsx"
 import GridItem from "./GridItem.jsx"
 import carouselStyle from "../styles/material-kit-react/components/carouselStyle"
-import reviews1 from "../content/reviews/images/reviews1.gif"
+import reviews1 from "../content/reviews/images/1.png"
 import reviewsTitleImg from "../images/branding/reviewsTitle.webp"
-import reviews2 from "../content/reviews/images/reviews2.gif"
-import reviews3 from "../content/reviews/images/reviews3.gif"
-import reviews4 from "../content/reviews/images/reviews4.gif"
-import reviews5 from "../content/reviews/images/reviews5.gif"
-import reviews6 from "../content/reviews/images/reviews6.gif"
-import reviews7 from "../content/reviews/images/reviews7.gif"
-import reviews8 from "../content/reviews/images/reviews8.gif"
-import reviews9 from "../content/reviews/images/reviews9.gif"
-import reviews10 from "../content/reviews/images/reviews10.gif"
+import reviews2 from "../content/reviews/images/2.png"
+import reviews3 from "../content/reviews/images/3.png"
+import reviews4 from "../content/reviews/images/4.png"
+import reviews5 from "../content/reviews/images/5.png"
+import reviews6 from "../content/reviews/images/6.png"
+import reviews7 from "../content/reviews/images/7.png"
+import reviews8 from "../content/reviews/images/8.png"
+import reviews9 from "../content/reviews/images/9.png"
+import reviews10 from "../content/reviews/images/10.png"
 
 class SectionCarousel extends React.Component {
   render() {
@@ -67,7 +67,7 @@ class SectionCarousel extends React.Component {
             <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
               <Slider {...settings} className={classes.carousel}>
                 {reviews.map((review, i) => {
-                  return <img src={review} alt={i} width="100%" />
+                  return <img alt={i} src={review} />
                 })}
               </Slider>
             </GridItem>
