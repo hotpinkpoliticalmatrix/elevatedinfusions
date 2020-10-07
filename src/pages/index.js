@@ -1,6 +1,5 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
-// import "typeface-roboto"
 
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
@@ -11,7 +10,7 @@ import IntroContainer from "../components/introContainer"
 import Menu from "../components/Menu"
 import BrownieParallax from "../components/BrownieParallax"
 import AssortmentParallax from "../components/AssortmentParallax"
-import Reviews from "../components/Reviews"
+import Reviews from "../components/reviewCarousel"
 
 const IndexPage = props => {
   const { data, classes } = props

@@ -19,7 +19,8 @@ class IntroContainer extends React.Component {
       classes.imgRaised,
       classes.imgRoundedCircle,
       classes.imgFluid,
-      classes.logoIcon
+      classes.logoIcon,
+      classes.productImg
     )
 
     return (
@@ -76,7 +77,6 @@ class IntroContainer extends React.Component {
                 </div>
               </GridItem>
             </GridContainer>
-
             <ImgGallery products={products} classes={classes} />
           </div>
         </div>
