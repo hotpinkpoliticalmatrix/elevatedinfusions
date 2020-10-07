@@ -1,12 +1,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.elevatedinfusions.com">
-    <img alt="Elevate" src="./src/images/branding/circularLogo.png" width="130" />
+    <img alt="Elevate" src="./src/images/branding/circularLogo.png" width="160" />
   </a>
+  Decadent infused creations for celebrations & every-day indulgence.
 </p>
----
 
-Decadent infused creations for celebrations & every-day indulgence.
 
 ## Sections
 
