@@ -3,7 +3,7 @@
   <a href="https://www.elevatedinfusions.com">
     <img alt="Elevate" src="./src/images/branding/circularLogo.png" width="160" />
   </a>
-  <p>Decadent infused creations for celebrations & every-day indulgence.</p>
+  <h2>Decadent infused creations for celebrations & every-day indulgence.</h2>
 </div>
 
 
