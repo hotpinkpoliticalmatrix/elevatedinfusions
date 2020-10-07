@@ -7,7 +7,7 @@
 </div>
 
 
-## Sections
+### Sections
 
 1. Intro
 2. Products
@@ -16,7 +16,7 @@
 
 ---
 
-## How to Start
+### How to Start
 
 1. **Install the Gatsby CLI.**
 
