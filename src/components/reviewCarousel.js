@@ -8,17 +8,17 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import GridContainer from "./GridContainer.jsx"
 import GridItem from "./GridItem.jsx"
 import carouselStyle from "../styles/material-kit-react/components/carouselStyle"
-import reviews1 from "../content/reviews/images/1.png"
+import reviews1 from "../content/reviews/images/1.webp"
 import reviewsTitleImg from "../images/branding/reviewsTitle.webp"
-import reviews2 from "../content/reviews/images/2.png"
-import reviews3 from "../content/reviews/images/3.png"
-import reviews4 from "../content/reviews/images/4.png"
-import reviews5 from "../content/reviews/images/5.png"
-import reviews6 from "../content/reviews/images/6.png"
-import reviews7 from "../content/reviews/images/7.png"
-import reviews8 from "../content/reviews/images/8.png"
-import reviews9 from "../content/reviews/images/9.png"
-import reviews10 from "../content/reviews/images/10.png"
+import reviews2 from "../content/reviews/images/2.webp"
+import reviews3 from "../content/reviews/images/3.webp"
+import reviews4 from "../content/reviews/images/4.webp"
+import reviews5 from "../content/reviews/images/5.webp"
+import reviews6 from "../content/reviews/images/6.webp"
+import reviews7 from "../content/reviews/images/7.webp"
+import reviews8 from "../content/reviews/images/8.webp"
+import reviews9 from "../content/reviews/images/9.webp"
+import reviews10 from "../content/reviews/images/10.webp"
 
 class SectionCarousel extends React.Component {
   render() {
@@ -41,13 +41,13 @@ class SectionCarousel extends React.Component {
       infinite: true,
       speed: 1000,
       autoplaySpeed: 4900,
-      fadeIn: false,
+      fade: true,
       autoplay: true,
       pauseOnHover: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       accessibility: true,
-      arrows: true,
+      // arrows: true,
       draggable: true,
       lazyLoad: true,
       swipe: true,
@@ -67,7 +67,9 @@ class SectionCarousel extends React.Component {
             <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
               <Slider {...settings} className={classes.carousel}>
                 {reviews.map((review, i) => {
-                  return <img alt={i} src={review} />
+                  return (
+                    <img className={classes.reviews} alt={i} src={review} />
+                  )
                 })}
               </Slider>
             </GridItem>

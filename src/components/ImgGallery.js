@@ -24,10 +24,18 @@ class ImgGallery extends React.Component {
       product => product.name === "CerealSeries"
     )
     const specials = products.filter(product => product.name === "Specials")
-    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery)
+    const navImageClasses = classNames(
+      classes.imgRounded,
+      classes.imgGallery,
+      classes.boxShadow
+    )
     return (
-      <GridContainer id="products" justify="center">
-        <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+      <GridContainer
+        id="products"
+        className={classes.flexContainer}
+        justify="center"
+      >
+        <GridItem xs={12} sm={12} md={9} className={classes.navWrapper}>
           <NavPills
             alignCenter
             color="primary"
@@ -152,7 +160,7 @@ class ImgGallery extends React.Component {
                 ),
               },
               {
-                tabButton: "Cereal Series",
+                tabButton: "Cereals",
                 tabIcon: FlashOnIcon,
                 tabContent: (
                   <GridContainer justify="center">

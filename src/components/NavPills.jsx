@@ -98,7 +98,7 @@ class NavPills extends React.Component {
       </div>
     )
     return horizontal !== undefined ? (
-      <GridContainer>
+      <GridContainer className={classes.flexContainer}>
         <GridItem {...horizontal.tabsGrid}>{tabButtons}</GridItem>
         <GridItem {...horizontal.contentGrid}>{tabContent}</GridItem>
       </GridContainer>

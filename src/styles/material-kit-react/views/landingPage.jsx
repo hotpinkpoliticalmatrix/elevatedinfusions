@@ -39,7 +39,7 @@ const landingPageStyle = {
       margin: "5px 6px 0",
     },
     "@media (min-width: 767px)": {
-      fontSize: "1.313rem",
+      fontSize: "1.2rem",
     },
   },
   main: {

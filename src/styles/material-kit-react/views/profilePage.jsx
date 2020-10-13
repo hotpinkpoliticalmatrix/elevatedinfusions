@@ -1,4 +1,9 @@
-import { container, title, warningColor } from "../../material-kit-react"
+import {
+  container,
+  title,
+  warningColor,
+  primaryBoxShadow,
+} from "../../material-kit-react"
 
 import imagesStyle from "../imagesStyles"
 
@@ -159,6 +164,17 @@ const profilePageStyle = {
     },
     "@media (min-width: 1080px)": {
       maxWidth: "700px",
+    },
+  },
+  boxShadow: {
+    ...primaryBoxShadow,
+  },
+  flexContainer: {
+    disply: "flex",
+    flexWrap: "wrap",
+    "@media (min-width: 576px)": {
+      display: "flex",
+      flexWrap: "nowrap",
     },
   },
 }
