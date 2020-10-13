@@ -24,7 +24,7 @@ const IndexPage = props => {
       <IntroContainer intro={intro} products={products} />
       <BrownieParallax />
       <Menu />
-      <AssortmentParallax />
+      {/* <AssortmentParallax /> */}
       <Reviews />
     </Layout>
   )

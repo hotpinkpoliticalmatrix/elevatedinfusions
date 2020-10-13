@@ -1,9 +1,28 @@
 import { container } from "../../material-kit-react"
+import assortment from "../../../images/mainProducts/assortment3.webp"
 
 const carouselStyle = {
   section: {
     padding: "70px 0",
+    "&:before": {
+      background: "rgba(0, 0, 0, 0.5)",
+    },
+    backgroundImage: `url(${assortment})`,
+    minHeight: "700px",
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    top: "0",
+    left: "0",
+    bottom: "0",
+    right: "0",
+    // position: "absolute",
+    zIndex: "-1;",
   },
+  // filter: {
+  //   backdropFilter: "grayscale(0.5) opacity(0.8)",
+  // },
   container,
   marginAuto: {
     marginLeft: "auto !important",
@@ -13,7 +32,7 @@ const carouselStyle = {
     maxWidth: "200px",
     margin: "240px 0 20px",
     "@media (min-width: 400px)": {
-      marginTop: "160px",
+      marginTop: "0px",
       maxWidth: "250px",
       width: "105%",
       height: "auto",
