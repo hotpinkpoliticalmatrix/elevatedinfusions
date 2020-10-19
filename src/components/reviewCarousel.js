@@ -34,7 +34,6 @@ class SectionCarousel extends React.Component {
       reviews9,
       reviews10,
     ]
-    console.log(reviews)
     const { classes } = this.props
     const settings = {
       dots: false,
@@ -47,7 +46,6 @@ class SectionCarousel extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       accessibility: true,
-      // arrows: true,
       draggable: true,
       lazyLoad: true,
       swipe: true,
