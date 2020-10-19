@@ -17,12 +17,8 @@ const carouselStyle = {
     left: "0",
     bottom: "0",
     right: "0",
-    // position: "absolute",
     zIndex: "-1;",
   },
-  // filter: {
-  //   backdropFilter: "grayscale(0.5) opacity(0.8)",
-  // },
   container,
   marginAuto: {
     marginLeft: "auto !important",
