@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-remark-embed-video`,
       options: {
