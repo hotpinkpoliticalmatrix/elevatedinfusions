@@ -42,12 +42,7 @@ export const pageQuery = graphql`
               img {
                 childImageSharp {
                   fluid(maxHeight: 600) {
-                    aspectRatio
-                    src
-                    srcSet
-                    srcWebp
-                    srcSetWebp
-                    sizes
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
                   }
                 }
               }
