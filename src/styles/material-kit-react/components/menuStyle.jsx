@@ -1,4 +1,4 @@
-import { container } from "../../material-kit-react"
+import { container, warningColor } from "../../material-kit-react"
 
 const menuStyle = {
   section: {
@@ -12,6 +12,7 @@ const menuStyle = {
     // backgroundPosition: "center",
     // backgroundRepeat: "no-repeat",
     // backgroundSize: "cover",
+    backgroundColor: warningColor,
     top: "0",
     left: "0",
     bottom: "0",
@@ -22,6 +23,14 @@ const menuStyle = {
   marginAuto: {
     marginLeft: "auto !important",
     marginRight: "auto !important",
+  },
+  menuDiv: {
+    "@media (min-width: 600px)": {
+      maxWidth: "550px",
+    },
+    "@media (min-width: 1080px)": {
+      maxWidth: "700px",
+    },
   },
   menuHead: {
     maxWidth: "200px",
@@ -48,11 +57,9 @@ const menuStyle = {
       flexDirection: "column",
     },
   },
-  carousel: {
-    padding: "0 25px",
-  },
-  reviews: {
-    borderRadius: "40px",
+  menu: {
+    borderRadius: "15%",
+    margin: "-10px 0 30px",
   },
 }
 
