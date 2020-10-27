@@ -1,4 +1,4 @@
-import brownies from "../../../images/mainProducts/browniessmore2.webp"
+import brownies from "../../../images/mainProducts/browniessmore2.jpg"
 
 const brownieParallaxStyle = {
   parallaxContainer: {
@@ -17,7 +17,6 @@ const brownieParallaxStyle = {
     left: "0",
     bottom: "0",
     right: "0",
-    position: "absolute",
     zIndex: "-1;",
   },
   filter: {

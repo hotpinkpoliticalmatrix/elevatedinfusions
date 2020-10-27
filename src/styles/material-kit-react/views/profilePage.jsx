@@ -93,18 +93,14 @@ const profilePageStyle = {
   treet: {
     "@media (min-width: 400px)": {
       maxWidth: "350px",
-      width: "105%",
-      height: "auto",
+      width: "100%",
+      height: "100%",
     },
     "@media (min-width: 767px)": {
       maxWidth: "450px",
-      width: "105%",
-      height: "auto",
     },
     "@media (min-width: 960px)": {
       maxWidth: "500px",
-      width: "100%",
-      height: "auto",
     },
   },
   menuContainer: {
@@ -112,19 +108,20 @@ const profilePageStyle = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    alignItems: "center",
     textAlign: "center",
     backgroundColor: warningColor,
-    "@media (min-width: 600px)": {
+    "@media (min-width: 960px)": {
       margin: "0px",
       display: "flex",
       justifyContent: "center",
       alignContent: "center",
-      flexDirection: "row",
+      // flexDirection: "row",
     },
   },
   menuHead: {
     paddingTop: "100px",
-    zIndex: "3",
+    marginTop: "-190px",
     marginBottom: "20px",
     maxWidth: "200px",
     "@media (min-width: 400px)": {
@@ -132,7 +129,7 @@ const profilePageStyle = {
       height: "auto",
     },
     "@media (min-width: 600px)": {
-      maxWidth: "220px",
+      maxWidth: "240px",
       width: "105%",
       height: "auto",
     },
@@ -151,10 +148,14 @@ const profilePageStyle = {
       paddingTop: "0",
     },
   },
+  menuDiv: {
+    marginLeft: "auto !important",
+    marginRight: "auto !important",
+  },
   menu: {
     borderRadius: "15%",
     padding: "13px 13px 35px",
-    marginTop: "-10px",
+    margin: "-10px 0 30px",
     "@media (min-width: 600px)": {
       maxWidth: "550px",
     },

@@ -24,7 +24,7 @@ const IndexPage = props => {
       <IntroContainer intro={intro} products={products} />
       <BrownieParallax />
       <Menu />
-      {/* <AssortmentParallax /> */}
+      <AssortmentParallax />
       <Reviews />
     </Layout>
   )
@@ -42,7 +42,7 @@ export const pageQuery = graphql`
               img {
                 childImageSharp {
                   fluid(maxHeight: 600) {
-                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
@@ -59,11 +59,7 @@ export const pageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxHeight: 300) {
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
