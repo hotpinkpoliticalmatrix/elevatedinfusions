@@ -93,77 +93,14 @@ const profilePageStyle = {
   treet: {
     "@media (min-width: 400px)": {
       maxWidth: "350px",
-      width: "105%",
-      height: "auto",
+      width: "100%",
+      height: "100%",
     },
     "@media (min-width: 767px)": {
       maxWidth: "450px",
-      width: "105%",
-      height: "auto",
     },
     "@media (min-width: 960px)": {
       maxWidth: "500px",
-      width: "100%",
-      height: "auto",
-    },
-  },
-  menuContainer: {
-    paddingTop: "100px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    textAlign: "center",
-    backgroundColor: warningColor,
-    "@media (min-width: 600px)": {
-      margin: "0px",
-      display: "flex",
-      justifyContent: "center",
-      alignContent: "center",
-      flexDirection: "row",
-    },
-  },
-  menuHead: {
-    paddingTop: "100px",
-    zIndex: "3",
-    marginBottom: "20px",
-    maxWidth: "200px",
-    "@media (min-width: 400px)": {
-      width: "105%",
-      height: "auto",
-    },
-    "@media (min-width: 600px)": {
-      maxWidth: "220px",
-      width: "105%",
-      height: "auto",
-    },
-    "@media (min-width: 960px)": {
-      margin: "480px 60px 0",
-      maxWidth: "240px",
-      width: "100%",
-      height: "auto",
-      paddingTop: "0",
-    },
-    "@media (min-width: 1080px)": {
-      margin: "500px 60px 25px",
-      maxWidth: "300px",
-      width: "100%",
-      height: "auto",
-      paddingTop: "0",
-    },
-  },
-  menu: {
-    borderRadius: "15%",
-    padding: "13px 13px 35px",
-    marginTop: "-10px",
-    "@media (min-width: 600px)": {
-      maxWidth: "550px",
-    },
-    "@media (min-width: 960px)": {
-      margin: "235px 0 25px",
-      padding: "20px",
-    },
-    "@media (min-width: 1080px)": {
-      maxWidth: "700px",
     },
   },
   boxShadow: {

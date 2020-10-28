@@ -9,7 +9,6 @@ import profilePageStyle from "../styles/material-kit-react/views/profilePage"
 import IntroContainer from "../components/introContainer"
 import Menu from "../components/Menu"
 import BrownieParallax from "../components/BrownieParallax"
-import AssortmentParallax from "../components/AssortmentParallax"
 import Reviews from "../components/reviewCarousel"
 
 const IndexPage = props => {
@@ -24,7 +23,6 @@ const IndexPage = props => {
       <IntroContainer intro={intro} products={products} />
       <BrownieParallax />
       <Menu />
-      {/* <AssortmentParallax /> */}
       <Reviews />
     </Layout>
   )
@@ -42,12 +40,7 @@ export const pageQuery = graphql`
               img {
                 childImageSharp {
                   fluid(maxHeight: 600) {
-                    aspectRatio
-                    src
-                    srcSet
-                    srcWebp
-                    srcSetWebp
-                    sizes
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
@@ -64,11 +57,7 @@ export const pageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxHeight: 300) {
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
@@ -94,43 +83,8 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            image {
-              childImageSharp {
-                fluid(quality: 100) {
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
-                }
-              }
-            }
-            logo {
-              childImageSharp {
-                fluid(maxHeight: 100, quality: 100) {
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
-                }
-              }
-            }
             intro
             main
-            contactIntro
-            contact
-            titleImg {
-              childImageSharp {
-                fluid(maxHeight: 200, quality: 100) {
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
-                }
-              }
-            }
           }
         }
       }
