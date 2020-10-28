@@ -6,9 +6,7 @@ import PropTypes from "prop-types"
 import classNames from "classnames"
 import { List, ListItem, withStyles } from "@material-ui/core"
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite"
-import { FaInstagram, HiOutlineMail } from "react-icons/fa"
-import EmailIcon from "@material-ui/icons/Email"
+import { FaInstagram } from "react-icons/fa"
 import footerStyle from "../styles/material-kit-react/components/footerStyle"
 
 function Footer({ ...props }) {
@@ -17,44 +15,25 @@ function Footer({ ...props }) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont,
   })
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont,
-  })
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              Elevated Infusions
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.instagram.com/elevateyourinfusions/"
-                rel="noopener noreferrer"
-                className={classes.block}
-                target="_blank"
-              >
-                <FaInstagram />
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}></ListItem>
-          </List>
-        </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()}, made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://staceyeliuk.dev"
-            rel="noopener noreferrer"
-            className={aClasses}
-            target="_blank"
-          >
-            hotPinkPoliticalMatrix
-          </a>{" "}
-          .
-        </div>
+        <List className={classes.list}>
+          <ListItem className={classes.inlineBlock}>
+            Elevated Infusions
+          </ListItem>
+          <ListItem className={classes.inlineBlock}>
+            <a
+              href="https://www.instagram.com/elevateyourinfusions/"
+              rel="noopener noreferrer"
+              className={classes.block}
+              target="_blank"
+            >
+              <FaInstagram />
+            </a>
+          </ListItem>
+          <ListItem className={classes.inlineBlock}></ListItem>
+        </List>
       </div>
     </footer>
   )

@@ -2,8 +2,6 @@ import React from "react"
 import GridItem from "./GridItem"
 import GridContainer from "./GridContainer"
 import withStyles from "@material-ui/core/styles/withStyles"
-// import logo from "../images/branding/menuLogo.webp"
-// import menu from "../images/mainProducts/menu.webp"
 import menuStyle from "../styles/material-kit-react/components/menuStyle"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
@@ -29,13 +27,6 @@ function Menu({ classes }) {
         childImageSharp {
           fixed(width: 300) {
             ...GatsbyImageSharpFixed_withWebp
-          }
-        }
-      }
-      menu: file(relativePath: { eq: "menu/menu.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 700, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -67,14 +58,12 @@ function Menu({ classes }) {
             <Img className={classes.menuHead} fixed={logoSources} alt="logo" />
           </GridItem>
           <GridItem xs={11} sm={11} md={10} className={classes.menuDiv}>
-            {/* <div className=> */}
             <Img
               fluid={data.mobileMenu.childImageSharp.fluid}
               id="menu"
               className={classes.menu}
               alt="menu"
             />
-            {/* </div> */}
           </GridItem>{" "}
         </GridContainer>
       </div>

@@ -1,5 +1,5 @@
 import { container } from "../../material-kit-react"
-import assortment from "../../../images/mainProducts/assortment3.webp"
+import assortment from "../../../images/mainProducts/assortment3.png"
 
 const carouselStyle = {
   section: {
@@ -8,7 +8,6 @@ const carouselStyle = {
       background: "rgba(0, 0, 0, 0.5)",
     },
     backgroundImage: `url(${assortment})`,
-    minHeight: "700px",
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -26,9 +25,8 @@ const carouselStyle = {
   },
   menuHead: {
     maxWidth: "200px",
-    margin: "240px 0 20px",
+    marginBottom: "20px",
     "@media (min-width: 400px)": {
-      marginTop: "0px",
       maxWidth: "250px",
       width: "105%",
       height: "auto",
@@ -49,7 +47,9 @@ const carouselStyle = {
     },
   },
   carousel: {
-    padding: "0 25px",
+    "@media (min-width: 400px)": {
+      padding: "0 25px",
+    },
   },
   reviews: {
     borderRadius: "40px",
