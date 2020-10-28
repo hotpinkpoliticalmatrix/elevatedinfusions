@@ -77,10 +77,9 @@ function SectionCarousel({ classes }) {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer className={classes.menuContainer}>
+        <GridContainer id="reviews" className={classes.menuContainer}>
           <GridItem xs={10} sm={10} md={6}>
             <Img
-              id="reviews"
               alt="reviews"
               fixed={logoSources}
               className={classes.menuHead}

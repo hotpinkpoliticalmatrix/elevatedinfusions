@@ -53,14 +53,17 @@ function Menu({ classes }) {
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer className={classes.menuContainer} justify="center">
+        <GridContainer
+          id="menu"
+          className={classes.menuContainer}
+          justify="center"
+        >
           <GridItem xs={10} sm={10} md={4} className={classes.logoContainer}>
             <Img className={classes.menuHead} fixed={logoSources} alt="logo" />
           </GridItem>
           <GridItem xs={11} sm={11} md={10} className={classes.menuDiv}>
             <Img
               fluid={data.mobileMenu.childImageSharp.fluid}
-              id="menu"
               className={classes.menu}
               alt="menu"
             />
