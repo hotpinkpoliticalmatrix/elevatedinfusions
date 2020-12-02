@@ -29,7 +29,7 @@ function Footer({ ...props }) {
               className={classes.block}
               target="_blank"
             >
-              <FaInstagram />
+              <FaInstagram title="Instagram" />
             </a>
           </ListItem>
           <ListItem className={classes.inlineBlock}></ListItem>

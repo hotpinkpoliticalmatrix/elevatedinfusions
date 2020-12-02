@@ -20,12 +20,14 @@ const profilePageStyle = {
   },
   description: {
     fontSize: ".85rem",
-    lineHeight: "1.4rem",
-    margin: "1.3rem .65rem 0",
+    lineHeight: "1.3rem",
+    margin: "1.3rem .8rem 0",
     textAlign: "justify",
     "@media (min-width: 400px)": {
+      lineHeight: "1.4rem",
+
       fontSize: ".9rem",
-      margin: "1.071rem .65rem 0",
+      margin: "1.071rem .9rem 0",
       maxWidth: "600px",
       color: warningColor,
     },
@@ -92,7 +94,7 @@ const profilePageStyle = {
   },
   treet: {
     "@media (min-width: 400px)": {
-      maxWidth: "350px",
+      maxWidth: "320px",
       width: "100%",
       height: "100%",
     },

@@ -53,7 +53,7 @@ class IntroContainer extends React.Component {
                     link
                     className={classes.margin5}
                   >
-                    <FaInstagram />
+                    <FaInstagram title="Instagram" />
                   </Button>
                   <Button
                     href="https://www.facebook.com/Elevateyourinfusions"
@@ -63,7 +63,7 @@ class IntroContainer extends React.Component {
                     link
                     className={classes.margin5}
                   >
-                    <FaFacebook />
+                    <FaFacebook title="Facebook" />
                   </Button>
                   <div className={classes.name}>
                     <div className={classes.description}>

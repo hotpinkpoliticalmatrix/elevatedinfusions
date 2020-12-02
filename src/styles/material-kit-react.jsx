@@ -73,7 +73,8 @@ const primaryColor = "#055365" //dark teal
 const warningColor = "#303E74" //dark blue
 const dangerColor = "#863AA6" //hot pink
 const successColor = "#C4832F" //bronze
-const infoColor = "#746044" //raw umber
+const infoColor = "863AA6"
+//"#746044" //raw umber
 const roseColor = "#EDE7B1" //medium champagne
 const grayColor = "#999999"
 
