@@ -24,8 +24,7 @@ const menuStyle = {
   },
   menuHead: {
     maxWidth: "200px",
-    margin: "-100px 0 20px",
-    paddingTop: "100px",
+    margin: "-400px 0 20px",
     "@media (min-width: 400px)": {
       maxWidth: "250px",
       width: "105%",
@@ -38,8 +37,8 @@ const menuStyle = {
     textAlign: "center",
     alignContent: "center",
     alignItems: "center",
+    margin: "-40px",
     "@media (min-width: 767px)": {
-      margin: "0px",
       display: "flex",
       justifyContent: "center",
       alignContent: "center",
@@ -48,7 +47,7 @@ const menuStyle = {
   },
   menu: {
     borderRadius: "15%",
-    margin: "-10px 0 50px",
+    margin: "-20px 0 55px",
   },
 }
 

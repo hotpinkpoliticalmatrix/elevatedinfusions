@@ -18,7 +18,7 @@ function Menu({ classes }) {
       }
       tabletLogo: file(relativePath: { eq: "menu/menuLogo.png" }) {
         childImageSharp {
-          fixed(width: 240) {
+          fixed(width: 200) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }

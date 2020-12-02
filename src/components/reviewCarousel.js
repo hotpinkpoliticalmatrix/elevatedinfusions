@@ -32,7 +32,7 @@ function SectionCarousel({ classes }) {
       }
       tabletLogo: file(relativePath: { eq: "reviews/reviewsTitle.png" }) {
         childImageSharp {
-          fixed(width: 260) {
+          fixed(width: 240) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }

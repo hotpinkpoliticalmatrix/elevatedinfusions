@@ -3,10 +3,10 @@ import brownies from "../../../images/mainProducts/browniessmore2.jpg"
 const brownieParallaxStyle = {
   parallaxContainer: {
     backgroundImage: `url(${brownies})`,
-
-    /* Set a specific height */
-    minHeight: "400px",
-
+    minHeight: "300px",
+    "@media (min-width: 600px)": {
+      minHeight: "400px",
+    },
     /* Create the parallax scrolling effect */
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
