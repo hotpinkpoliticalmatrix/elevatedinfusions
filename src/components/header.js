@@ -13,9 +13,7 @@ import Drawer from "@material-ui/core/Drawer"
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu"
 // core components
-import Button from "../components/button"
 import headerStyle from "../styles/material-kit-react/components/headerStyle"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 import logo from "../images/branding/longlogo.png"
 class Header extends React.Component {
   constructor(props) {
@@ -71,7 +69,6 @@ class Header extends React.Component {
       classes,
       color,
       rightLinks,
-      brand,
       leftLinks,
       fixed,
       absolute,
@@ -84,11 +81,8 @@ class Header extends React.Component {
     })
     const brandComponent = (
       <a href="/#" id="headerLogo" className={classes.title}>
-        <img src={logo} className={classes.imgLogo} />
+        <img src={logo} alt="logo" className={classes.imgLogo} />
       </a>
-      // <AnchorLink to="/" id="headerLogo" className={classes.title}>
-      //   Elevated Infusions
-      // </AnchorLink>
     )
     return (
       <AppBar className={appBarClasses}>
