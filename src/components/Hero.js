@@ -4,7 +4,7 @@ import Parallax from "./parallax"
 import GridContainer from "./GridContainer"
 import GridItem from "./GridItem"
 import Button from "./button"
-import { FaPlay } from "react-icons/fa"
+import { MdRateReview } from "react-icons/md"
 import Img from "gatsby-image"
 import landingPageStyle from "../styles/material-kit-react/views/landingPage"
 import Typography from "@material-ui/core/Typography"
@@ -34,7 +34,7 @@ const Hero = ({ classes, hero }) => {
               href="/#reviews"
               rel="noopener noreferrer"
             >
-              <FaPlay />
+              <MdRateReview />
               See our reviews
             </Button>
           </GridItem>

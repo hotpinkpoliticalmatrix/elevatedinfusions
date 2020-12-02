@@ -257,10 +257,16 @@ const buttonStyle = {
     pointerEvents: "none",
   },
   lg: {
-    padding: "1.125rem 2.25rem",
+    padding: "1rem 1.9rem",
     fontSize: "0.875rem",
     lineHeight: "1.333333",
     borderRadius: "0.2rem",
+    "@media (min-width: 400px)": {
+      padding: "1.125rem 2.25rem",
+      fontSize: "0.875rem",
+      lineHeight: "1.333333",
+      borderRadius: "0.2rem",
+    },
   },
   sm: {
     padding: "0.40625rem 1.25rem",

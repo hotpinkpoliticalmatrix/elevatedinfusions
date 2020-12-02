@@ -32,7 +32,8 @@ const landingPageStyle = {
     textDecoration: "none",
   },
   subtitle: {
-    fontSize: "1rem",
+    fontSize: ".93rem",
+    margin: "0px 7px",
     "@media (min-width: 400px)": {
       fontSize: "1.1rem",
       maxWidth: "500px",

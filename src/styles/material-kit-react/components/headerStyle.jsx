@@ -58,15 +58,29 @@ const headerStyle = {
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",
-    padding: "8px 16px",
+    padding: "15px 10px",
     "&:hover,&:focus": {
       color: "inherit",
       background: "transparent",
     },
     textDecoration: "none",
+    "@media (min-width: 400px)": {
+      padding: "25px 10px",
+    },
   },
   appResponsive: {
     margin: "20px 10px",
+  },
+  imgLogo: {
+    width: "280px",
+    marginTop: "10px",
+    padding: "0px 10px 0px 0px",
+    "@media (min-width: 960px)": {
+      width: "225px",
+    },
+    "@media (min-width: 992px)": {
+      width: "280px",
+    },
   },
   primary: {
     backgroundColor: primaryColor,

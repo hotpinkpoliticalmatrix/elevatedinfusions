@@ -73,7 +73,6 @@ function SectionCarousel({ classes }) {
     },
   ]
   const reviews = data.reviews.edges
-
   return (
     <div className={classes.section}>
       <div className={classes.container}>
@@ -88,10 +87,12 @@ function SectionCarousel({ classes }) {
           <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
             <Slider {...settings} className={classes.carousel}>
               {reviews.map((review, i) => {
+                console.log(review)
                 return (
                   <Img
                     className={classes.reviews}
-                    alt={i}
+                    alt={review.node.childImageSharp.fluid.src}
+                    key={review.node.childImageSharp.fluid.src}
                     fluid={review.node.childImageSharp.fluid}
                   />
                 )

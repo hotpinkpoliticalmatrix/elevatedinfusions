@@ -13,9 +13,10 @@ import Drawer from "@material-ui/core/Drawer"
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu"
 // core components
+import Button from "../components/button"
 import headerStyle from "../styles/material-kit-react/components/headerStyle"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-
+import logo from "../images/branding/longlogo.png"
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -30,6 +31,7 @@ class Header extends React.Component {
   }
   componentDidMount() {
     if (this.props.changeColorOnScroll) {
+      document.getElementById("headerLogo").style.opacity = "0"
       window.addEventListener("scroll", this.headerColorChange, {
         passive: true,
       })
@@ -45,6 +47,7 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color])
+      document.getElementById("headerLogo").style.opacity = "1"
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -52,6 +55,7 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color])
+      document.getElementById("headerLogo").style.opacity = "0"
     }
   }
   componentWillUnmount() {
@@ -79,9 +83,12 @@ class Header extends React.Component {
       [classes.fixed]: fixed,
     })
     const brandComponent = (
-      <AnchorLink to="/" className={classes.title}>
-        {brand}
-      </AnchorLink>
+      <a href="/#" id="headerLogo" className={classes.title}>
+        <img src={logo} className={classes.imgLogo} />
+      </a>
+      // <AnchorLink to="/" id="headerLogo" className={classes.title}>
+      //   Elevated Infusions
+      // </AnchorLink>
     )
     return (
       <AppBar className={appBarClasses}>

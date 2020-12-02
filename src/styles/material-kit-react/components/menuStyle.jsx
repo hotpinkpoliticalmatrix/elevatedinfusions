@@ -1,8 +1,9 @@
-import { container, warningColor } from "../../material-kit-react"
+import { container, roseColor } from "../../material-kit-react"
 
 const menuStyle = {
   section: {
-    backgroundColor: warningColor,
+    backgroundImage: `linear-gradient(to bottom, rgba(255,0,0,0), ${roseColor})`,
+    // backgroundColor: roseColor,
     top: "0",
     left: "0",
     bottom: "0",
