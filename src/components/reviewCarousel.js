@@ -87,7 +87,6 @@ function SectionCarousel({ classes }) {
           <GridItem xs={12} sm={12} md={10} className={classes.marginAuto}>
             <Slider {...settings} className={classes.carousel}>
               {reviews.map((review, i) => {
-                console.log(review)
                 return (
                   <Img
                     className={classes.reviews}
