@@ -85,6 +85,8 @@ export const pageQuery = graphql`
           frontmatter {
             intro
             main
+            purchaseHeader
+            purchaseLink
           }
         }
       }

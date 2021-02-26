@@ -29,7 +29,7 @@ const Hero = ({ classes, hero }) => {
             </Typography>
             <br />
             <Button
-              color="danger"
+              color="warning"
               size="lg"
               href="/#reviews"
               rel="noopener noreferrer"

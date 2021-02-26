@@ -4,9 +4,6 @@ const brownieParallaxStyle = {
   parallaxContainer: {
     backgroundImage: `url(${brownies})`,
     minHeight: "300px",
-    "@media (min-width: 600px)": {
-      minHeight: "400px",
-    },
     /* Create the parallax scrolling effect */
     backgroundAttachment: "fixed",
     backgroundPosition: "center",

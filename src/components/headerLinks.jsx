@@ -50,6 +50,17 @@ function HeaderLinks({ ...props }) {
         </AnchorLink>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          href="https://ritual.co/order/elevated-infusions-32nd-st-30th-ave-long-island-city/5974"
+          rel="noopener noreferrer"
+          target="_blank"
+          className={classes.navLinkBold}
+        >
+          Shop
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
           title="Follow us on facebook"

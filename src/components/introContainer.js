@@ -14,7 +14,7 @@ import treet from "../images/branding/treetyourself.png"
 
 class IntroContainer extends React.Component {
   render() {
-    const { classes, intro, products } = this.props
+    const { classes, intro, products, purchase } = this.props
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -70,8 +70,16 @@ class IntroContainer extends React.Component {
                       <p>
                         {intro.frontmatter.intro} <br />
                         <br />
-                        {intro.frontmatter.main}{" "}
+                        {intro.frontmatter.main} <br />
                       </p>
+                      <div className={classes.button}>
+                        <a
+                          className={classes.buttonText}
+                          href={intro.frontmatter.purchaseLink}
+                        >
+                          {intro.frontmatter.purchaseHeader}
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

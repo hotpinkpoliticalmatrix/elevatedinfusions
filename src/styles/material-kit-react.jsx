@@ -69,13 +69,13 @@ const defaultFont = {
   lineHeight: "1.5em",
 }
 
-const primaryColor = "#765378" //dark teal
-const warningColor = "#303E74" //dark blue
-const dangerColor = "#863AA6" //hot pink
+const primaryColor = "#765378" //lavender
+const warningColor = "#313F73" //dark blue
+const dangerColor = "#12484d" //teal
 const successColor = "#C4832F" //bronze
 const infoColor = "#746044" //raw umber
 const roseColor = "#AEB493" //medium champagne
-const grayColor = "#999999"
+const grayColor = "#4c5ea1"
 
 const primaryBoxShadow = {
   boxShadow:
