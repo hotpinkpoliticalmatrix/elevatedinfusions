@@ -4,7 +4,7 @@ import Parallax from "./parallax"
 import GridContainer from "./GridContainer"
 import GridItem from "./GridItem"
 import Button from "./button"
-import { MdRateReview } from "react-icons/md"
+import { MdShoppingBasket } from "react-icons/md"
 import Img from "gatsby-image"
 import landingPageStyle from "../styles/material-kit-react/views/landingPage"
 import Typography from "@material-ui/core/Typography"
@@ -31,11 +31,11 @@ const Hero = ({ classes, hero }) => {
             <Button
               color="warning"
               size="lg"
-              href="/#reviews"
+              href="https://ritual.co/order/elevated-infusions-32nd-st-30th-ave-long-island-city/5974"
               rel="noopener noreferrer"
             >
-              <MdRateReview />
-              See our reviews
+              <MdShoppingBasket style={{ marginRight: "10px" }} />
+              Shop Now
             </Button>
           </GridItem>
         </GridContainer>
