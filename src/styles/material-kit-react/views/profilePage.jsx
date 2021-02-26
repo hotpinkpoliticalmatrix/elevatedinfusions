@@ -135,7 +135,7 @@ const profilePageStyle = {
     color: warningColor,
   },
   navWrapper: {
-    margin: "20px 0px 20px 0px",
+    margin: "80px 0px 20px 0px",
     textAlign: "center",
   },
   treetContainer: {

@@ -72,14 +72,14 @@ class IntroContainer extends React.Component {
                         <br />
                         {intro.frontmatter.main} <br />
                       </p>
-                      <div className={classes.button}>
-                        <a
-                          className={classes.buttonText}
-                          href={intro.frontmatter.purchaseLink}
-                        >
-                          {intro.frontmatter.purchaseHeader}
-                        </a>
-                      </div>
+                      <Button
+                        href={intro.frontmatter.purchaseLink}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        size="lg"
+                      >
+                        {intro.frontmatter.purchaseHeader}
+                      </Button>
                     </div>
                   </div>
                 </div>
